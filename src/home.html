@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="slider">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" data-hash="slide1">
+              <div class="slider__item">
+                <img class="slider__img" data-src="@img/slaider1.jpg" data-swiper-parallax="-100">
+                <div class="slider__content">
+                  <!-- <img class="slider__ico" data-src="@img/free.svg" data-swiper-parallax="-200"
+                    data-swiper-parallax-scale="0.15">-->
+                  <H1 class="section-title slider__title" data-swiper-parallax="-300">Промо набор DRY&nbsp;DRY <br />
+                    ВЕСЬ АПРЕЛЬ</H1>
+                  <p class="section-subtitle slider__subtitle" data-swiper-parallax="-500">Для интимной гигиены только в
+                    ноябре!</p>
+                  <p class="slider__sale" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
+                    <span>-20%</span>
+                  </p>
+                  <!--<p class="slider__shveden" data-swiper-parallax-opacity="0.5">С <img class="slider__shveden-flag"
+                      data-src="@img/flag.png"> из Швеции</p>-->
+                  <button class="slider__btn button" data-swiper-parallax-scale="0.15">Купить</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" data-hash="slide2">
+
+              <img class="slider__img-bg swiper-lazy" data-src="@img/slider_full.jpg"
+                data-swiper-parallax-opacity="0.5">
+
+            </div>
+            <div class="swiper-slide" data-hash="slide2">
+
+              <img class="slider__img-bg swiper-lazy" data-src="@img/slider_full_2.jpg"
+                data-swiper-parallax-opacity="0.5">
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <a href="#" data-goto="#effect">
+        <div class="scroll-down2"></div></button>
+      </a>
+
+      <section id="effect" class="effect">
+        <div class="effect__text-block">
+          <h2 class="section-title effect__title ">Доказанная эффективность в России и мире</h2>
+          <ul class="effect__list">
+            <li class="effect__item"><img class="effect__icon" src="@img/24_7.svg">
+              <p class="effect__txt"><span>Длительность действия до 7ми дней*</span><br>
+                Эффективность с первого применения. Доказано в 2011 г.</p>
+            </li>
+            <li class="effect__item"><img class="effect__icon" src="@img/whater.svg">
+              <p class="effect__txt"><span>При обильном и нормальном потоотделении</span></p>
+            </li>
+            <li class="effect__item"><img class="effect__icon" src="@img/comfort.svg">
+              <p class="effect__txt"><span>Пролонгированное действие</span><br>
+                Дарит чувство уверенности и комфорта надолго.</p>
+            </li>
+            <li class="effect__item"><img class="effect__icon" src="@img/inyan.svg">
+              <p class="effect__txt"><span>Универсальность</span><br>
+                Подходит как мужчинам, так и женщинам.</p>
+            </li>
+            <li class="effect__item"><img class="effect__icon" src="@img/savemoney.svg">
+              <p class="effect__txt"><span>Экономичность</span><br>
+                Способен заменить обычный антиперспирант или дезодорант.
+                Одного флакона хватает минимум на 6 мес.</p>
+            </li>
+            <li class="effect__item"><img class="effect__icon" src="@img/eco.svg">
+              <p class="effect__txt"><span>Безопасен и не токсичен</span><br>
+                Пользуются миллионы людей.
+                Доказано клиническими исследованиями в 2011 г.</p>
+            </li>
+          </ul>
+        </div>
+        <img class="effect__img" data-prlx-mouse data-src="@img/classik.jpg">
+      </section>
+      <section class="years">
+        <div class="years__about">
+          <h2 class="section-title years__title">Более 10 лет исследований</h2>
+          <div class="years__video">
+            <img data-src="@img/poster_video.png" width="100%" />
+            <a data-popup="#mainVideo" class="about__video-play"></a>
+          </div>
+        </div>
+        <div class="years__motivation">
+          <p class="section-text years__txt">ООО «Сканди Лайн» (™DryDry) — это Компания, реализующая многолетний опыт
+            шведских
+            косметологов в производимых средствах. Исследования средств ТМ DryDry показали, что они абсолютно <a
+              href="#" class="years__link link">безопасны</a>,
+            <a href="#" class="years__link link">нетоксичны</a> и <a href="#" class="years__link link">эффективны</a> в
+            течение 7 дней. Создавая
+            Компанию, мы ставили перед собой цель – предложить на
+            рынок
+            продукцию, которая внесла бы в жизнь людей что-то светлое, волшебное, и главное – соответствующее
+            индивидуальным
+            вкусам и запросам каждого покупателя.
+          </p>
+          <div class="years__documents">
+            <img src="@img/documents.svg" alt="" class="years__document-icon">
+            <a href="#" class="years__document-link link">Документы подтверждающие исследования в России</a>
+          </div>
+          <div class="years__documents">
+            <img src="@img/documents.svg" alt="" class="years__document-icon">
+            <a href="#" class="years__document-link link">Документы подтверждающие исследования в мире</a>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div data-tabs class="tabs">
+          <nav data-tabs-titles class="tabs__navigation">
+            <button type="button" class="tabs__title _tab-active">Отзывы наших
+              клиентов</button>
+            <button type="button" class="tabs__title">Видеообзоры</button>
+            <button type="button" class="tabs__title"><a href="./faq.html">Вопрос-Ответ</a></button>
+          </nav>
+          <div data-tabs-body class="tabs__content">
+            <div class="tabs__body tabs__body_home">
+              <ul class="feedback__list_home">
+                @@include('html/feedback/_fb_26_01_2001.htm',{})
+                @@include('html/feedback/_fb_26_11_2019.htm',{})
+              </ul>
+              <div class="info__footer">
+                <!--<p class="info__text">Мы будем рады узнать Ваше мнение о компании и продукции.</p>-->
+                <div class="info__buttons">
+                  <a href="#" data-popup="#feedbackForm"><button class="button feedback__btn">Оставить
+                      отзыв</button></a>
+                  <a href="./feedback.html"><button class="button feedback__btn">все отзывы</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="tabs__body tabs__body_home">
+              <div class="tabs__video">
+                @@include('html/video/_nobacteria.htm',{})
+                @@include('html/video/_suncare.htm',{})
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

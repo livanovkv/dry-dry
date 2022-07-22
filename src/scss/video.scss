@@ -1,0 +1,62 @@
+.video {
+  max-width: rem(1200);
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: rem(30);
+  row-gap: rem(60);
+  margin: rem(60) rem(45);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+    margin: 0 0 rem(40) 0;
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    max-height: rem(300);
+    position: relative;
+  }
+  &__poster {
+    object-fit: cover;
+    width: 100%;
+    height: rem(300);
+    @media screen and (max-width: $mobile) {
+      height: rem(250);
+    }
+  }
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media screen and (max-width: $mobile) {
+      top: 40%;
+    }
+  }
+  &__icon {
+    height: rem(80);
+    width: rem(80);
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      height: rem(90);
+      width: rem(90);
+    }
+  }
+  &__content {
+    height: rem(50);
+    @media screen and (max-width: $mobile) {
+      height: rem(70);
+    }
+  }
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 36, 16, 1920, 320);
+    line-height: 42px;
+    color: $dryOrange;
+  }
+  &__date {
+  }
+}

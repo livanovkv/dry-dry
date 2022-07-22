@@ -1,0 +1,113 @@
+.contacts {
+  color: $dryGray;
+  max-width: rem(1200);
+  margin: rem(60) rem(45);
+  &__title {
+    font-size: rem(36);
+    margin: 0;
+    padding: 0;
+  }
+  &__map-title {
+    margin: rem(30) rem(45);
+    color: $dryGray;
+    font-size: rem(36);
+  }
+  &__manager {
+    color: $dryGray;
+    margin: rem(20) 0 0;
+  }
+  &__manager-item {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: (20);
+    &:not(:last-child) {
+      border-bottom: 1px dashed $dryGray;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 423px) {
+      max-width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__txt {
+    max-width: rem(500);
+    color: $dryGray;
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 400;
+    &_bold {
+      font-weight: 700;
+    }
+    &_sotr {
+      font-size: rem(24);
+      font-weight: 700;
+      margin-bottom: rem(30);
+    }
+  }
+  &__link {
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 400;
+  }
+  &__office {
+    max-width: rem(1200);
+    margin: rem(60) rem(45);
+  }
+  &__phone {
+    font-size: rem(36);
+    line-height: rem(40);
+    font-weight: 700;
+    color: $dryGray;
+    margin: rem(20) 0 0;
+  }
+  &__phone-label {
+    font-size: rem(18);
+    line-height: rem(24);
+    font-weight: 400;
+    color: $dryGray;
+    margin: 0 0 rem(20) 0;
+  }
+  &__ps {
+    font-size: rem(13);
+    line-height: rem(24);
+    font-weight: 400;
+    color: $dryGray;
+  }
+  &__form {
+    padding: rem(40) rem(500) rem(40) rem(40);
+    background: $dryLightGray;
+  }
+  &__sec {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(50);
+  }
+  &__work-date {
+    max-width: rem(300);
+    font-size: rem(24);
+    line-height: rem(24);
+    font-weight: 700;
+    color: $dryGray;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__week-day {
+    margin-bottom: rem(10);
+  }
+  &__work-time-title {
+    font-size: rem(24);
+    font-weight: 700;
+    color: $dryGray;
+    margin: 0 0 rem(20) 0;
+  }
+  &__day-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 rem(10) 0;
+  }
+}

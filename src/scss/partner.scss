@@ -1,0 +1,94 @@
+.partner {
+  margin: rem(60) rem(45);
+  @media screen and (max-width: $mobile) {
+    margin: rem(60) rem(10);
+  }
+  &__title {
+    padding: 0;
+    margin: 0 0 rem(20) 0;
+  }
+  &__txt {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #8e8e8e;
+    padding: 0;
+    margin: 0 0 rem(10);
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: rem(30);
+    gap: rem(30);
+    @media screen and (max-width: $mobile) {
+      padding: rem(10);
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    min-height: rem(200);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px 0px;
+    padding: rem(20);
+    background: $dryWhite;
+    box-shadow: 2px 4px 5px hsla(0, 0, 0, 0.1), -2px 4px 5px hsla(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 2px 9px 30px hsla(0, 0, 0, 0.1), -2px 9px 40px hsla(0, 0, 0, 0.1);
+    }
+  }
+  &__name {
+    font-size: rem(22);
+    line-height: rem(22);
+    font-weight: 700;
+    color: $dryOrange;
+    margin: 0 0 rem(10) 0;
+  }
+  &__about {
+    font-size: rem(16);
+    line-height: rem(22);
+    font-weight: 400;
+    color: $dryGray;
+    margin: 0 0 rem(10) 0;
+  }
+  &__phone {
+    font-size: rem(20);
+    line-height: rem(22);
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 rem(10) 0;
+  }
+  &__emeil {
+    font-size: rem(16);
+    line-height: rem(22);
+    font-weight: 400;
+    color: $dryGray;
+    margin: 0;
+    border-bottom: $dryOrange dashed 1px;
+  }
+  &__ino {
+    padding: rem(40);
+    background: $dryLightGray;
+    @media screen and (max-width: $mobile) {
+      padding: rem(10);
+    }
+  }
+  &__country {
+    font-size: rem(18);
+    line-height: rem(22);
+    font-weight: 700;
+    color: $dryGray;
+    margin: 0 0 rem(10) 0;
+  }
+  &__btn {
+    font-size: rem(14);
+    max-width: rem(200);
+    padding: rem(10) rem(15);
+  }
+  &__btn-show-more {
+    margin: rem(30) auto;
+  }
+}

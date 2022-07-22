@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Вопрос-ответ" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="video">
+        <h1 class="section-title faq__title">Видео</h1>
+        <div class="video__list">
+          @@include('html/video/_nobacteria.htm',{})
+          @@include('html/video/_suncare.htm',{})
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>

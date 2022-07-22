@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Новости"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <nav class="catalog__menu-list news-menu">
+        <a type="button" class="link catalog__menu-item" data-filter="all">Все</a>
+        <a type="button" class="catalog__menu-item link" data-filter="sales">Акции</a>
+        <a type="button" class="catalog__menu-item link" data-filter="news">Новости</a>
+        <a type="button" class="catalog__menu-item link" data-filter="articles">Статьи</a>
+        <a type="button" class="catalog__menu-item link foots" data-filter="ivents">Конкурсы</a>
+        <a href="./videos.html" type="button" class="catalog__menu-item link foots" data-filter="ivents">Видео</a>
+      </nav>
+      <nav class="catalog__menu-list news-date">
+        <a type="button" class="catalog__menu-item link" data-filter="all">2022</a>
+        <a type="button" class="catalog__menu-item link" data-filter="sales">2021</a>
+        <a type="button" class="catalog__menu-item link" data-filter="news">2020</a>
+        <a type="button" class="catalog__menu-item link" data-filter="articles">2019</a>
+        <a type="button" class="catalog__menu-item link foots" data-filter="ivents">2018</a>
+      </nav>
+      <section class="news">
+       
+          <article class="news__item">
+            <a href="html/news/drydry_woman.html" class="news__link">
+              <img src="@img/news/woman.png" class="news__img" alt=""></a>
+            <div class="news__content">
+              <a href="news/drydry_woman.html" class="news__link">
+                <h2 class="news__title">DRY DRY Woman в аптечной сети Планета Здоровья</h2>
+              </a>
+              <p class="news__subtitle">Парфюмированный антиперспирант поступил в продажу.
+              </p>
+              <p class="news__date">2022</p>
+              <a href="news/drydry_woman.html"><button class="news__btn">Подробнее</button></a>
+            </div>
+          </article>
+       
+        
+          <article class="news__item">
+            <a href="#" class="news__link"><img src="@img/news/product2.jpg" class="news__img" alt=""></a>
+            <div class="news__content">
+              <a href="#" class="news__link">
+                <h2 class="news__title">Подарим набор для ухода за воласами.</h2>
+              </a>
+              <p class="news__subtitle">В социальных сетях проходит конкурс с 25.01 по 04.02.22г.</p>
+            </div>
+          </article>
+       
+        <article class="news__item">
+          <div class="news__item-body">
+            <a href="#" class="news__link"><img src="@img/news/product3.jpg" class="news__img" alt=""></a>
+            <div class="news__content">
+              <a href="#" class="news__link">
+                <h2 class="news__title">Новогодние подарки каждому!</h2>
+              </a>
+              <p class="news__subtitle">Главный приз - Годовой запас косметических средств от TM DRYDRY</p>
+            </div>
+          </div>
+        </article>
+        <article class="news__item">
+          <div class="news__item-body alt">
+            <a href="#" class="news__link"><img src="@img/news/product4.jpg" class="news__img" alt=""></a>
+            <div class="news__content">
+              <a href="#" class="news__link">
+                <h2 class="news__title">Скидки в декабре на всю продукцию TM DRY DRY</h2>
+              </a>
+              <p class="news__subtitle">C 01 по 31 декабря в сети аптек Доктор Столетов</p>
+            </div>
+          </div>
+        </article>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

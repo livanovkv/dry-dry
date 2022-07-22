@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Где купить" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section data-showmore="size" class="partner">
+        <h1 class="section-title partner__title">Где купить</h1>
+        <p class="partner__txt">Вы можете приобрести средства ™DRY DRY в более чем в 95% аптек на территории России ИЛИ
+          в
+          большинстве парфюмерно-косметических магазинов. В том числе в магазинах и интернет-магазинах из списка ниже:
+        </p>
+        <div data-showmore-content="1160" class="partner__list">
+          @@include('html/partners/_cdek.htm',{})
+          @@include('html/partners/_letual.htm',{})
+          @@include('html/partners/_megapteka.htm',{})
+          @@include('html/partners/_raduga.htm',{})
+          @@include('html/partners/_wildberries.htm',{})
+          @@include('html/partners/_gallery.htm',{})
+          @@include('html/partners/_ozon.htm',{})
+          @@include('html/partners/_goldapple.htm',{})
+          @@include('html/partners/_yamarket.htm',{})
+          @@include('html/partners/_lamel.htm',{})
+          @@include('html/partners/_5lb.htm',{})
+          @@include('html/partners/_rigla.htm',{})
+          @@include('html/partners/_budzdorov.htm',{})
+          @@include('html/partners/_perekrestok.htm',{})
+          @@include('html/partners/_krasotkapro.htm',{})
+          @@include('html/partners/_samson.htm',{})
+          @@include('html/partners/_stoletov.htm',{})
+          @@include('html/partners/_superapteka.htm',{})
+          @@include('html/partners/_ozerki.htm',{})
+          @@include('html/partners/_neofarm.htm',{})
+          @@include('html/partners/_stolichki.htm',{})
+          @@include('html/partners/_planeta.htm',{})
+          @@include('html/partners/_zdravcity.htm',{})
+          @@include('html/partners/_parfumlider.htm',{})
+          @@include('html/partners/_nevis.htm',{})
+
+        </div>
+        <button hidden data-showmore-button type="button" class="block__more button partner__btn-show-more">
+          <span>Показать еще</span>
+          <span>Скыть</span>
+        </button>
+      </section>
+      <section class="partner__ino">
+        <h2 class="section-title partner__title">Наши зарубежные партнеры</h2>
+        <div class="partner__list">
+          @@include('html/partners/ino/_flipperteh.htm',{})
+          @@include('html/partners/ino/_ecoline.htm',{})
+          @@include('html/partners/ino/_medlex.htm',{})
+          @@include('html/partners/ino/_dryturkmen.htm',{})
+          @@include('html/partners/ino/_dryukr.htm',{})
+          @@include('html/partners/ino/_dryarmenia.htm',{})
+          @@include('html/partners/ino/_dryazerb.htm',{})
+          @@include('html/partners/ino/_dryuzb.htm',{})
+          @@include('html/partners/ino/_drymong.htm',{})
+          @@include('html/partners/ino/_drykirgiz.htm',{})
+          @@include('html/partners/ino/_dryturk.htm',{})
+        </div>
+      </section>
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>

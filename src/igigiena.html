@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="catalog">
+        <div class="catalog__menu">
+          <nav class="catalog__menu-list">
+            @@include('html/_catalogmenu.htm',{})
+          </nav>
+
+          <div class="catalog__list">
+            @@include('html/catalog/_intimateSpray.htm',{})
+            @@include('html/catalog/_intimateFoam.htm',{})
+          </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

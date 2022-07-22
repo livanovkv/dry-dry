@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"Контакты" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="contacts">
+        <h1 class="section-title contacts__title">Контакты</h1>
+        <ul class="footer__manager contacts__manager">
+          <p class="contacts__txt contacts__txt_sotr">По вопросам сотрудничества обращайтесь в отделы*:</p>
+          <li class="contacts__manager-item">
+            <p class="contacts__txt">Начальник перспективного развития:<br>
+              (отдел продаж/оптовые закупки)</p>
+            <p class="contacts__txt contacts__txt_bold">Изосимова Татьяна<br>
+              <a href="mailto: izosimova@unk-korolev.ru" class="contacts__link">izosimova@unk-korolev.ru</a>
+            </p>
+          </li>
+          <li class="contacts__manager-item">
+            <p class="contacts__txt">Специалист отдела развития:</p>
+            <p class="contacts__txt contacts__txt_bold">Соколова Ольга<br>
+              <a href="mailto: dry@unk-korolev.ru" class="contacts__link">dry@unk-korolev.ru</a>
+            </p>
+          </li>
+          <li class="contacts__manager-item">
+            <p class="contacts__txt">Директор по маркетингу и рекламе:</p>
+            <p class="contacts__txt contacts__txt_bold">Анастасия Шлойда<br>
+              <a href="mailto: marketing@unk-korolev.ru" class="contacts__link">marketing@unk-korolev.ru</a>
+            </p>
+          </li>
+          <li class="contacts__manager-item">
+            <p class="contacts__txt">По вопросам рекламы и маркетинга:</p>
+            <p class="contacts__txt contacts__txt_bold">Евгения Висленева<br>
+              <a href="mailto: info@dryru.com" class="contacts__link">info@dryru.com</a>
+            </p>
+          </li>
+          <li class="contacts__manager-item">
+            <p class="contacts__txt">Общие вопросы</p>
+            <p class="contacts__txt"><a href="mailto: info@dry-dry.ru" class="contacts__link">info@dry-dry.ru</a></p>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts__map">
+        <h2 class="section-title contacts__map-title">Как к нам проехать</h2>
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade425a89ec5196e43539fa3abd008ee9958341ef55fdb11accc57bb935aace11&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+      </section>
+      <div class="contacts__office">
+        <p class="section-title contacts__title">Главный офис</p>
+        <p class="contacts__txt">Московская область, г. Королев,
+          Калининградский проезд, д. 1
+          ООО "Сканди Лайн"
+          (Skandy Line LLC)
+          ИНН/TIN 5018112138</p>
+        <p class="contacts__phone">+7 (495) 512-55-55</p>
+        <p class="contacts__phone-label">Телефон отдела заказов с сайта</p>
+        <p class="contacts__txt contacts__txt">Время работы: <br>пн.-чт. 10-18,
+          пт. 10-17, сб.-вс. - выходной</p>
+        <p class="contacts__ps">* Ваше предложение будет рассмотрено в течение 7 дней.</p>
+
+        <p class="contacts__ps">* В случае, если оно заинтересует нашу компанию, с вами свяжется наш сотрудник</p>
+
+        <p class="contacts__ps">* В случае отрицательного решения по вашему предложению, ответ может не предоставляться.
+        </p>
+      </div>
+      <section class="contacts__form">
+        <p class="section-title contacts__title">Хотите продавать нашу продукцию?</p>
+        <div class="contacts__sec">
+          <div class="contacts__work-time">
+            <p class="contacts__work-time-title">Время работы:</p>
+            <div class="contacts__work-date">
+              <div class="contacts__week-day">
+                Пн.<br> Вт.<br> Ср.<br> Чт.
+              </div>
+              <div class="contacts__day-time">10-18</div>
+              <div class="contacts__week-day">
+                Пт.
+              </div>
+              <div class="contacts__day-time">10-17</div>
+              <div class="contacts__week-day">
+                Сб.<br>Вс.
+              </div>
+              <div class="contacts__day-time">выходной</div>
+            </div>
+          </div>
+          <div class="contacts__contact-form">
+            <form data-ajax class="form" method="POST" action="sendmail.php">
+              <input class="form__input" type="text" name="form[name]" data-error="Error" placeholder="Фамилия и имя"
+                class="input">
+              <input class="form__input" type="text" name="form[email]" data-error="Error" placeholder="Ваша почта"
+                class="input">
+              <textarea class="form__input" name="message" data-autoheight placeholder="Ваше сообщение"></textarea>
+              <button type="submit" class="button form__btn">Отправить</button>
+            </form>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>
