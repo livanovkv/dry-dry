@@ -4,16 +4,26 @@
   display: grid;
   grid-template-columns: 70% 30%;
   position: relative;
-
+  @include adaptiveValue("gap", 40, 10, 1920, 320);
+  @media screen and (max-width: 768px) { 
+    grid-template-columns: 1fr;
+    margin: rem(20) rem(25);
+  }
   &__title {
     padding: 0;
     margin: rem(60) rem(45);
+    @media screen and (max-width: 768px) { 
+      margin: rem(80) rem(30) rem(30) rem(30);
+    }
   }
 
   &__conteiner {
     max-width: rem(800);
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 768px) { 
+      order: 2;
+    }
   }
 
   &__text {
@@ -37,7 +47,7 @@
 
   &__video {
     position: relative;
-    width: rem(800);
+    width: 100%;
   }
   &__video-play {
     position: absolute;
@@ -60,6 +70,11 @@
     text-align: center;
     span {
       color: $dryOrange;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: rem(18);
+      line-height: rem(22);
+      order: 1;
     }
   }
 

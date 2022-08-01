@@ -11,11 +11,11 @@
     font-weight: 700;
     line-height: 42px;
     color: $dryGray;
-
     margin: 0 0 0 0;
     text-decoration: none;
     transition: all 0.3s ease-out;
     position: relative;
+    
     @media screen and (max-width: $mobile) {
       border: solid 1px $dryGray;
       padding: rem(10) rem(20);
@@ -53,26 +53,10 @@
     &_product {
       margin: 0;
       justify-content: space-between;
-    }
-    &__navigation {
-      list-style-type: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-      @media screen and (max-width: 767px) {
-        flex-wrap: wrap;
-      }
-      @media screen and (max-width: $mobile) {
-        flex-direction: column;
-        gap: rem(10);
-      }
-    }
-
-    &_product {
       font-size: rem(16);
       line-height: rem(20);
-      margin: 0;
     }
+    
     @media screen and (max-width: 767px) {
       font-size: rem(18);
     }
@@ -96,6 +80,7 @@
     padding: 0 rem(20) 0 0;
     @media screen and (max-width: $mobile) {
       min-height: rem(300);
+      padding: 0;
     }
     &:-webkit-scrollbar {
       width: 12px; /* ширина scrollbar */
@@ -110,10 +95,7 @@
     }
     &_scrollbar {
       overflow: auto;
-    }
-    &_home {
-      min-height: rem(350);
-    }
+    }    
     & li {
       list-style-type: none;
       &::before {
@@ -121,6 +103,15 @@
         padding-right: rem(5);
         margin-left: rem(10);
         color: $dryOrange;
+      }
+    }
+    &_home {
+      min-height: rem(350);
+      & li {
+        list-style-type: none;
+        &::before {
+          content: "";
+        }
       }
     }
   }
@@ -151,6 +142,9 @@
         flex-direction: row;
         flex-wrap: wrap;
       }
+    }
+    &_home {
+      margin: 0 rem(10);
     }
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;

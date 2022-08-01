@@ -5,8 +5,13 @@
   column-gap: rem(30);
   row-gap: rem(60);
   margin: rem(60) rem(45);
-  @media screen and (max-width: $mobile) {
-    margin: rem(60) rem(35);
+  @media screen and (max-width: 424px) {
+    margin: rem(60) rem(15);
+    row-gap: rem(30);
+  }
+  @media screen and (max-width: 320px) {
+    margin: rem(60) rem(10);
+    row-gap: rem(20);
   }
   &__item {
     max-width: rem(1200);
@@ -19,6 +24,9 @@
     padding: rem(20);
     @media screen and (max-width: 1360px) {
       flex-direction: column;
+    }
+    @media screen and (max-width: 604px) {
+      margin: 0;
     }
     &:before,
     &:after {
@@ -74,6 +82,10 @@
     object-fit: cover;
     top: 0;
     left: 0;
+    @media screen and (max-width: 604px) {
+      width: 100%;
+      max-height: rem(500);
+    }
   }
 
   &__bg {
@@ -90,10 +102,13 @@
     height: auto;
     display: block;
     font-weight: 700;
-    @include adaptiveValue("font-size", 36, 16, 1920, 320);
-    line-height: 42px;
+    @include adaptiveValue("font-size", 36, 20, 1920, 320);
+    @include adaptiveValue("line-height", 42, 26, 1920, 320);
     color: $dryOrange;
     margin: 0 auto rem(25) 0;
+    @media screen and (max-width: 604px) {
+      margin: 0 auto rem(15) 0;
+    }
   }
   &__subtitle {
     width: auto;
@@ -109,15 +124,28 @@
     color: $dryGray;
     margin: rem(10) 0 0 0;
   }
+  
+}
+.news-detail {
   &__txt {
     max-width: rem(1200);
     color: $dryDarkGray;
     @include adaptiveValue("font-size", 18, 13, 768, 320);
     font-weight: 400;
     font-style: normal;
+    @include adaptiveValue("margin-bottom", 20, 10, 1980, 320);
+  }
+  & ul { @include adaptiveValue("margin-bottom", 20, 10, 1980, 320);}
+  & li {
+    list-style-type: none;
+    &::before {
+      content: "▪";
+      padding-right: rem(5);
+      margin-left: rem(10);
+      color: $dryOrange;
+    }
   }
 }
-
 .news-menu {
   margin: rem(55) rem(35) rem(10);
 }

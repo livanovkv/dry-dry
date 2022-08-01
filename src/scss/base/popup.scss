@@ -165,6 +165,7 @@ body::after {
   margin: rem(15) auto rem(10);
   @media screen and (max-width: 479px) {
     width: rem(280);
+    text-align: center;
   }
   @media screen and (max-width: 320px) {
     width: rem(260);
@@ -324,7 +325,6 @@ body::after {
 .popup__content_form {
   max-width: rem(800);
   flex-direction: column;
-  display: none;
   @media screen and (max-width: 1023px) {
     max-width: rem(340);
   }

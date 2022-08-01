@@ -21,7 +21,7 @@
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    background-color: $dryLightGray;
+    background-color: $dryWhite;
     border: none;
     margin: rem(10) 0;
     padding: rem(20) 0 rem(20) rem(20);
@@ -50,11 +50,14 @@
   &__column {
     flex-direction: column;
     margin: rem(20);
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
   }
-  &__line {
-  }
-  &__button {
-  }
+  //&__line {
+  //}
+  //&__button {
+  //}
   &__upload {
     margin: rem(10) 0;
     width: 0.1px;
@@ -82,6 +85,9 @@
         top: -50%;
         z-index: 5;
       }
+    }
+    @media screen and (max-width: 768px) {
+      gap: 0;
     }
   }
   &__error {

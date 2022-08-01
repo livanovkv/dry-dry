@@ -5,25 +5,55 @@
   column-gap: rem(30);
   row-gap: rem(60);
   margin: rem(60) rem(45);
-
+  @media screen and (max-width: $mobile) {
+    margin: rem(80) rem(20);
+    row-gap: rem(20);
+  }
+  @media screen and (max-width: 320px) {
+    margin: rem(80) rem(10);
+    row-gap: rem(20);
+  }
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 36, 26, 1920, 320);
+    line-height: 42px;
+    color: $dryOrange;
+    margin: 0 0 rem(40) 0;
+    padding: 0;
+    @media screen and (max-width: 425px) {
+      margin: 0 0 rem(20) 0;
+    }
+  }
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: rem(20);
     margin: 0 0 rem(40) 0;
+    @media screen and (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
   }
   &__item {
     display: block;
     width: 100%;
     max-height: rem(300);
     position: relative;
+    @media screen and (max-width: $mobile) {
+      max-height: rem(400);
+    }
+    @media screen and (max-width: 425px) {
+      max-height: rem(250);
+    }
   }
   &__poster {
     object-fit: cover;
     width: 100%;
     height: rem(300);
     @media screen and (max-width: $mobile) {
-      height: rem(250);
+      height: rem(350);
+    }
+    @media screen and (max-width: 425px) {
+      max-height: rem(250);
     }
   }
   &__play {
@@ -51,11 +81,12 @@
       height: rem(70);
     }
   }
-  &__title {
+  &__item-title {
     font-weight: 700;
     @include adaptiveValue("font-size", 36, 16, 1920, 320);
     line-height: 42px;
     color: $dryOrange;
+    
   }
   &__date {
   }
