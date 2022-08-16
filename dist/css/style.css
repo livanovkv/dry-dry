@@ -3181,13 +3181,26 @@ input:checked ~ .social-icons_min {
 
 .about__conteiner {
   max-width: 50rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.about__table {
+  width: 100%;
+  border: 1px solid #EEEEEE;
+}
+
+.about__table-header {
+  width: 100%;
+  background: #443e3e;
+}
+
+.about__table-header-item {
+  color: #f8f8f8;
+  text-decoration: none;
+  margin: 0.625rem auto;
+}
+
+.about__table-row:nth-of-type(odd) {
+  background: #f8f8f8;
 }
 
 .about__text {
