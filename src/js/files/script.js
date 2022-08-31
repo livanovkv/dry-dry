@@ -186,5 +186,3 @@ if(window.location.toString().indexOf('http://drydry.tmweb.ru/')>0)
   
   feedbackBtn.addEventListener("click", activeFdbForm);
 }*/
-
-
