@@ -372,6 +372,14 @@
 			transform: translateX(-5px);
 		}
 
+		&:visited {
+			text-decoration: none;
+		}
+
+		&:focus {
+			outline: none;
+		}
+
 		&_min {
 			background: url(@img/get_small_to_open.svg);
 
