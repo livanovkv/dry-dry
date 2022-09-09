@@ -827,6 +827,10 @@ body::after {
   display: flex;
 }
 
+.tabs__navigation:focus {
+  outline: none;
+}
+
 .tabs__title {
   font-size: 1.5rem;
   padding: 0.625rem 0.9375rem;
@@ -1255,8 +1259,8 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 0 15px black;
-          box-shadow: 0 0 15px black;
+  -webkit-box-shadow: 0 0 15px rgb(0, 0, 0);
+          box-shadow: 0 0 15px rgb(0, 0, 0);
   -webkit-transition: opacity 0.2s ease;
   -o-transition: opacity 0.2s ease;
   transition: opacity 0.2s ease;
@@ -2067,7 +2071,7 @@ input:checked ~ .social-icons_min {
 .footer {
   width: 100%;
   background: #8e8e8e;
-  padding: 0.625rem 0 0.625rem 18.75rem;
+  padding: 0.625rem 0 3.75rem 18.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2211,6 +2215,33 @@ input:checked ~ .social-icons_min {
 .footer__btn:hover {
   color: #fd4f00;
   background: #ffffff;
+}
+
+.footer__menu {
+  max-width: 15.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin: 0.625rem 0.625rem 0.625rem 0;
+}
+
+.footer__menu-item:not(:last-child) {
+  margin: 0 0 0.625rem;
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  color: #443e3e;
+}
+
+.footer__menu-link:hover {
+  color: #f8f8f8;
+  text-decoration: underline;
 }
 
 .page__content {
@@ -3804,8 +3835,8 @@ input:checked ~ .social-icons_min {
   border-radius: 10px 0px;
   padding: 1.25rem;
   background: #ffffff;
-  -webkit-box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1), -2px 4px 5px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.1), -2px 4px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 4px 5px hsla(0deg, 0%, 0%, 0.1), -2px 4px 5px hsla(0deg, 0%, 0%, 0.1);
+          box-shadow: 2px 4px 5px hsla(0deg, 0%, 0%, 0.1), -2px 4px 5px hsla(0deg, 0%, 0%, 0.1);
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -3815,8 +3846,8 @@ input:checked ~ .social-icons_min {
   -webkit-transform: translateY(-3px);
       -ms-transform: translateY(-3px);
           transform: translateY(-3px);
-  -webkit-box-shadow: 2px 9px 30px rgba(0, 0, 0, 0.1), -2px 9px 40px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 9px 30px rgba(0, 0, 0, 0.1), -2px 9px 40px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px 9px 30px hsla(0deg, 0%, 0%, 0.1), -2px 9px 40px hsla(0deg, 0%, 0%, 0.1);
+          box-shadow: 2px 9px 30px hsla(0deg, 0%, 0%, 0.1), -2px 9px 40px hsla(0deg, 0%, 0%, 0.1);
 }
 
 .partner__name {

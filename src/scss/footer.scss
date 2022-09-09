@@ -1,143 +1,179 @@
 //====================================================================================================
 .footer {
-  width: 100%;
-  background: $dryGray;
-  padding: rem(10) 0 rem(10) rem(300);
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  gap: rem(10);
-  @media screen and (max-width: 1024px) {
-    padding-left: rem(120);
-  }
-  @media screen and (max-width: 767px) {
-    padding-left: rem(30);
-    padding-right: rem(30);
-  }
-  &_min {
-    padding-left: rem(70);
-  }
+	width: 100%;
+	background: $dryGray;
+	padding: rem(10) 0 rem(60) rem(300);
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	gap: rem(10);
 
-  &__contacts {
-    width: 220px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 0;
-    @media screen and (max-width: 767px) {
-      width: 100%;
-      flex-direction: column;
-      margin: 0;
-    }
-    @media screen and (max-width: 425px) {
-      width: 100%;
-    }
-  }
+	@media screen and (max-width: 1024px) {
+		padding-left: rem(120);
+	}
 
-  &__txt {
-    width: 100%;
-    font-family: $fontFamily;
-    font-weight: 400;
-    font-size: rem(14);
-    line-height: rem(14);
-    color: $dryWhite;
-    padding: rem(10) 0;
-    margin: 0;
-    text-align: left;
-  }
+	@media screen and (max-width: 767px) {
+		padding-left: rem(30);
+		padding-right: rem(30);
+	}
 
-  &__txt_bold {
-    font-weight: 700;
-  }
+	&_min {
+		padding-left: rem(70);
+	}
 
-  &__phone {
-    font-family: $fontFamily;
-    font-weight: 700;
-    font-size: rem(24);
-    line-height: rem(28);
-    color: $dryWhite;
-    padding: 0;
-    margin: rem(20) 0 0;
-  }
+	&__contacts {
+		width: 220px;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		margin: 0;
 
-  &__phone-label {
-    font-family: $fontFamily;
-    font-weight: 700;
-    font-size: rem(13);
-    line-height: rem(15);
-    color: $dryWhite;
-    padding: 0;
-    margin: 0 0 rem(20);
-  }
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			flex-direction: column;
+			margin: 0;
+		}
 
-  &__manager {
-    min-width: rem(500);
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    @include adaptiveValue("margin-left", 90, 20, 1920, 1440);
-    padding: 0;
-    @media screen and (max-width: 767px) {
-      min-width: 100%;
-    }
-  }
+		@media screen and (max-width: 425px) {
+			width: 100%;
+		}
+	}
 
-  &__manager-item {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    &:not(:last-child) {
-      border-bottom: 1px dashed #ffffff;
-    }
-    @media screen and (max-width: 768px) {
-      max-width: 100%;
-      grid-template-columns: 1fr 1fr;
-    }
-    @media screen and (max-width: 423px) {
-      max-width: 100%;
-      grid-template-columns: 1fr;
-    }
-  }
+	&__txt {
+		width: 100%;
+		font-family: $fontFamily;
+		font-weight: 400;
+		font-size: rem(14);
+		line-height: rem(14);
+		color: $dryWhite;
+		padding: rem(10) 0;
+		margin: 0;
+		text-align: left;
+	}
 
-  &__link {
-    font-weight: 400;
-    font-size: rem(13);
-    line-height: rem(15);
-    color: $dryWhite;
-    text-decoration: underline;
+	&__txt_bold {
+		font-weight: 700;
+	}
 
-    &:hover {
-      text-decoration: none;
-    }
-  }
+	&__phone {
+		font-family: $fontFamily;
+		font-weight: 700;
+		font-size: rem(24);
+		line-height: rem(28);
+		color: $dryWhite;
+		padding: 0;
+		margin: rem(20) 0 0;
+	}
 
-  &__diller {
-    max-width: rem(300);
-    max-height: rem(100);
-    margin: 0;
-    @include adaptiveValue("margin-left", 150, 40, 1920, 1440);
-    @media screen and (max-width: 425px) {
-      max-width: rem(450);
-      max-height: rem(300);
-    }
-  }
+	&__phone-label {
+		font-family: $fontFamily;
+		font-weight: 700;
+		font-size: rem(13);
+		line-height: rem(15);
+		color: $dryWhite;
+		padding: 0;
+		margin: 0 0 rem(20);
+	}
 
-  &__btn {
-    background: $dryOrange;
-    color: $dryWhite;
-    font-size: 12px;
-    display: block;
-    height: auto;
-    margin: rem(45)  0 auto 0;
-    &:hover {
-      color: $dryOrange;
-      background: $dryWhite;
-    }
-    @media screen and (max-width: 425px) {
-      width: 100%;
-      margin: rem(25)  0 rem(20);
-    }
-  }
+	&__manager {
+		min-width: rem(500);
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		@include adaptiveValue("margin-left", 90, 20, 1920, 1440);
+		padding: 0;
+
+		@media screen and (max-width: 767px) {
+			min-width: 100%;
+		}
+	}
+
+	&__manager-item {
+		display: grid;
+		grid-template-columns: 60% 40%;
+
+		&:not(:last-child) {
+			border-bottom: 1px dashed #ffffff;
+		}
+
+		@media screen and (max-width: 768px) {
+			max-width: 100%;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media screen and (max-width: 423px) {
+			max-width: 100%;
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__link {
+		font-weight: 400;
+		font-size: rem(13);
+		line-height: rem(15);
+		color: $dryWhite;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	&__diller {
+		max-width: rem(300);
+		max-height: rem(100);
+		margin: 0;
+		@include adaptiveValue("margin-left", 150, 40, 1920, 1440);
+
+		@media screen and (max-width: 425px) {
+			max-width: rem(450);
+			max-height: rem(300);
+		}
+	}
+
+	&__btn {
+		background: $dryOrange;
+		color: $dryWhite;
+		font-size: 12px;
+		display: block;
+		height: auto;
+		margin: rem(45) 0 auto 0;
+
+		&:hover {
+			color: $dryOrange;
+			background: $dryWhite;
+		}
+
+		@media screen and (max-width: 425px) {
+			width: 100%;
+			margin: rem(25) 0 rem(20);
+		}
+	}
+
+	&__menu {
+		max-width: rem(250);
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		margin: rem(10) rem(10) rem(10) 0;
+	}
+
+	&__menu-item {
+		&:not(:last-child) {
+			margin: 0 0 rem(10);
+		}
+	}
+
+	&__menu-link {
+		text-decoration: none;
+		color: $dryDarkGray;
+
+		&:hover {
+			color: $dryLightGray;
+			text-decoration: underline;
+		}
+	}
 }
 
 //====================================================================================================
