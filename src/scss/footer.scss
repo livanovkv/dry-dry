@@ -2,7 +2,7 @@
 .footer {
 	width: 100%;
 	background: $dryGray;
-	padding: rem(10) 0 rem(60) rem(300);
+	padding: rem(10) 0 rem(30) rem(300);
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-around;
@@ -122,7 +122,6 @@
 
 	&__diller {
 		max-width: rem(300);
-		max-height: rem(100);
 		margin: 0;
 		@include adaptiveValue("margin-left", 150, 40, 1920, 1440);
 

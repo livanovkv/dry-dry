@@ -36,7 +36,7 @@
   &__item {
     display: block;
     width: 100%;
-    max-height: rem(300);
+    height: rem(400);
     position: relative;
     @media screen and (max-width: $mobile) {
       max-height: rem(400);
@@ -88,6 +88,5 @@
     color: $dryOrange;
     
   }
-  &__date {
-  }
+  
 }
