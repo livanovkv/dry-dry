@@ -74,6 +74,7 @@
 			&:focus {
 				outline: none;
 			}
+			
 		}
 
 		margin: 0 0 0 35px;
@@ -106,7 +107,9 @@
 			padding: rem(10) 0;
 		}
 	}
-
+	&__partner {
+			margin: rem(60) 0 0;
+		}
 	// .tabs__body
 	&__body {
 		font-weight: 400;
@@ -164,6 +167,10 @@
 					content: "";
 				}
 			}
+		}
+		&_partner {
+			height: auto;
+			margin: 0;
 		}
 	}
 

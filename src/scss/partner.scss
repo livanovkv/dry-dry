@@ -1,11 +1,12 @@
 .partner {
-  margin: rem(60) rem(45);
+  margin: rem(20) rem(45);
   @media screen and (max-width: $mobile) {
     margin: rem(60) rem(10);
   }
   &__title {
+		color: $dryGray;
     padding: 0;
-    margin: 0 0 rem(20) 0;
+    margin: 0 0 rem(20) rem(45);
   }
   &__txt {
     font-weight: 400;
@@ -30,6 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+		justify-content: space-between;
     border-radius: 10px 0px;
     padding: rem(20);
     background: $dryWhite;
@@ -39,7 +41,20 @@
       transform: translateY(-3px);
       box-shadow: 2px 9px 30px hsla(0, 0, 0, 0.1), -2px 9px 40px hsla(0, 0, 0, 0.1);
     }
+		&_ino {
+			 flex-direction: row;
+		}
   }
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__map {
+		width: rem(180);
+		height: rem(180);
+		border: $dryLightGray 1px solid;
+	}
   &__name {
     font-size: rem(22);
     line-height: rem(22);
