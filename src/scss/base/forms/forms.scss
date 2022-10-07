@@ -1,98 +1,98 @@
 //<FORM>
 // Снипет (HTML):
 .form {
-  display: flex;
-  gap: rem(30);
-  &__title {
-    font-size: rem(28);
-    line-height: rem(28);
-    color: $dryGray;
-    font-weight: 700;
-    margin: rem(20) 0 rem(20) rem(20);
-  }
-  &__input-list {
-    display: flex;
-    flex-direction: column;
-  }
-  &__input {
-    width: rem(300);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    background-color: $dryWhite;
-    border: none;
-    margin: rem(10) 0;
-    padding: rem(20) 0 rem(20) rem(20);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    @media screen and (max-width: $mobile) {
-      width: rem(240);
-    }
-    &:focus-visible {
-      border-bottom: 1px solid $dryOrange;
-      outline: none;
-    }
-  }
-  &__btn {
-    max-width: rem(200);
-  }
-  &__row {
-    flex-direction: row;
-    margin: rem(20);
-    @media screen and (max-width: 1023px) {
-      flex-direction: column;
-    }
-    @media screen and (max-width: $mobile) {
-      margin: 0;
-    }
-  }
-  &__column {
-    flex-direction: column;
-    margin: rem(20);
-    @media screen and (max-width: 768px) {
-      margin: 0;
-    }
-  }
-  //&__line {
-  //}
-  //&__button {
-  //}
-  &__upload {
-    margin: rem(10) 0;
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    z-index: 40;
-    
-    & + label {
-      font-size: rem(14);
-      font-weight: 400;
-      color: $dryGray;
-      display: inline-block;
-      cursor: pointer;
-      position: relative;
-      padding-left: rem(30);
-      margin: rem(20) 0;
-      &::before {
-        content: "";
-        position: absolute;
-        background: url(@img/ico_upload.svg) no-repeat;
-        width: rem(25);
-        height: rem(25);
-        left: 0;
-        top: -50%;
-        z-index: 5;
-      }
-    }
-    @media screen and (max-width: 768px) {
-      gap: 0;
-    }
-  }
-  &__error {
-    border-bottom: 1px solid rgba(255, 0, 0, 0.2);
-  }
+	display: flex;
+	gap: rem(30);
+	&__title {
+		font-size: rem(28);
+		line-height: rem(28);
+		color: $dryGray;
+		font-weight: 700;
+		margin: rem(20) 0 rem(20) rem(20);
+	}
+	&__input-list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__input {
+		width: rem(300);
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		background-color: $dryWhite;
+		border: none;
+		margin: rem(10) 0;
+		padding: rem(20) 0 rem(20) rem(20);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		@media screen and (max-width: $mobile) {
+			width: rem(240);
+		}
+		&:focus-visible {
+			border-bottom: 1px solid $dryOrange;
+			outline: none;
+		}
+	}
+	&__btn {
+		max-width: rem(200);
+	}
+	&__row {
+		flex-direction: row;
+		margin: rem(20);
+		@media screen and (max-width: 1023px) {
+			flex-direction: column;
+		}
+		@media screen and (max-width: $mobile) {
+			margin: 0;
+		}
+	}
+	&__column {
+		flex-direction: column;
+		margin: rem(20);
+		@media screen and (max-width: 768px) {
+			margin: 0;
+		}
+	}
+	//&__line {
+	//}
+	//&__button {
+	//}
+	&__upload {
+		margin: rem(10) 0;
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		z-index: 40;
+
+		& + label {
+			font-size: rem(14);
+			font-weight: 400;
+			color: $dryGray;
+			display: inline-block;
+			cursor: pointer;
+			position: relative;
+			padding-left: rem(30);
+			margin: rem(20) 0;
+			&::before {
+				content: "";
+				position: absolute;
+				background: url(@img/ico_upload.svg) no-repeat;
+				width: rem(25);
+				height: rem(25);
+				left: 0;
+				top: -50%;
+				z-index: 5;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			gap: 0;
+		}
+	}
+	&__error {
+		border-bottom: 1px solid rgba(255, 0, 0, 0.2);
+	}
 }
 //</FORM>
 
@@ -102,7 +102,7 @@
 
 // <INPUTS>
 // Снипет (HTML): inp
-//@import "input";
+@import "input";
 
 // <CHECK>
 // Снипет (HTML): chk

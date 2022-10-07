@@ -1,155 +1,159 @@
 .news {
-  max-width: rem(1200);
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: rem(30);
-  row-gap: rem(60);
-  margin: rem(60) rem(45);
-  @media screen and (max-width: 424px) {
-    margin: rem(60) rem(15);
-    row-gap: rem(30);
-  }
-  @media screen and (max-width: 320px) {
-    margin: rem(60) rem(10);
-    row-gap: rem(20);
-  }
-  &__item {
-    max-width: rem(1200);
-    min-width: rem(280);
-    margin: rem(40) rem(25);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    gap: rem(20);
-    padding: rem(20);
-    @media screen and (max-width: 1360px) {
-      flex-direction: column;
-    }
-    @media screen and (max-width: 604px) {
-      margin: 0;
-    }
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: 4px;
-      background: #fff;
-      transition: 0.5s;
-      z-index: -1;
-    }
-    &:nth-child(2n) {
-      flex-direction: row-reverse;
-      @media screen and (max-width: 1360px) {
-        flex-direction: column;
-      }
-     }  
-    &:hover {
-      .news__btn {
-        opacity: 1;
-      }
-    }
-    &:hover:before {
-      transform: rotate(3deg);
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    }
-    &:hover:after {
-      transform: rotate(1deg);
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
-    }
-  }
-  &__btn {
-    opacity: 0;
-    position: absolute;
-    right: rem(20);
-    bottom: rem(20);
-    color: $dryOrange;
-    font-weight: 400;
-    transition: all 0.5s ease-out;
-  }
-  &__content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  &__img {
-    width: auto;
-    max-height: rem(300);
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    @media screen and (max-width: 604px) {
-      width: 100%;
-      max-height: rem(500);
-    }
-  }
+	max-width: rem(1200);
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: rem(30);
+	row-gap: rem(60);
+	margin: rem(60) rem(45);
+	@media screen and (max-width: 424px) {
+		margin: rem(60) rem(15);
+		row-gap: rem(30);
+	}
+	@media screen and (max-width: 320px) {
+		margin: rem(60) rem(10);
+		row-gap: rem(20);
+	}
+	&__item {
+		max-width: rem(1200);
+		min-width: rem(280);
+		margin: rem(40) rem(25);
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		gap: rem(20);
+		padding: rem(20);
+		@media screen and (max-width: 1360px) {
+			flex-direction: column;
+		}
+		@media screen and (max-width: 604px) {
+			margin: 0;
+		}
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 4px;
+			background: #fff;
+			transition: 0.5s;
+			z-index: -1;
+		}
+		&:nth-child(2n) {
+			flex-direction: row-reverse;
+			@media screen and (max-width: 1360px) {
+				flex-direction: column;
+			}
+		}
+		&:hover {
+			.news__btn {
+				opacity: 1;
+			}
+		}
+		&:hover:before {
+			transform: rotate(3deg);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+		}
+		&:hover:after {
+			transform: rotate(1deg);
+			box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+		}
+	}
+	&__btn {
+		opacity: 0;
+		position: absolute;
+		right: rem(20);
+		bottom: rem(20);
+		color: $dryOrange;
+		font-weight: 400;
+		transition: all 0.5s ease-out;
+	}
+	&__content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__img {
+		width: auto;
+		max-height: rem(300);
+		object-fit: cover;
+		top: 0;
+		left: 0;
+		@media screen and (max-width: 604px) {
+			width: 100%;
+			max-height: rem(500);
+		}
+	}
 
-  &__bg {
-    width: auto;
-    max-height: rem(300);
-    position: absolute;
-    left: rem(-10);
-    top: rem(-10);
-    background-repeat: repeat-y;
-    z-index: -1;
-  }
-  &__title {
-    width: auto;
-    height: auto;
-    display: block;
-    font-weight: 700;
-    @include adaptiveValue("font-size", 36, 20, 1920, 320);
-    @include adaptiveValue("line-height", 42, 26, 1920, 320);
-    color: $dryOrange;
-    margin: 0 auto rem(25) 0;
-    @media screen and (max-width: 604px) {
-      margin: 0 auto rem(15) 0;
-    }
-  }
-  &__subtitle {
-    width: auto;
-    font-style: normal;
-    font-weight: 700;
-    @include adaptiveValue("font-size", 18, 13, 1920, 320);
-    line-height: 21px;
-    color: $dryGray;
-    margin: 0 auto 0 0;
-  }
-  &__date {
-    font-size: rem(24);
-    color: $dryGray;
-    margin: rem(10) 0 0 0;
-  }
-  
+	&__bg {
+		width: auto;
+		max-height: rem(300);
+		position: absolute;
+		left: rem(-10);
+		top: rem(-10);
+		background-repeat: repeat-y;
+		z-index: -1;
+	}
+	&__title {
+		width: auto;
+		height: auto;
+		display: block;
+		font-weight: 700;
+		@include adaptiveValue("font-size", 36, 20, 1920, 320);
+		@include adaptiveValue("line-height", 42, 26, 1920, 320);
+		color: $dryOrange;
+		margin: 0 auto rem(25) 0;
+		@media screen and (max-width: 604px) {
+			margin: 0 auto rem(15) 0;
+		}
+	}
+	&__subtitle {
+		width: auto;
+		font-style: normal;
+		font-weight: 700;
+		@include adaptiveValue("font-size", 18, 13, 1920, 320);
+		line-height: 21px;
+		color: $dryGray;
+		margin: 0 auto 0 0;
+	}
+	&__date {
+		font-size: rem(24);
+		color: $dryGray;
+		margin: rem(10) 0 0 0;
+	}
 }
 .news-detail {
-  &__txt {
-    max-width: rem(1200);
-    color: $dryDarkGray;
-    @include adaptiveValue("font-size", 18, 13, 768, 320);
-    font-weight: 400;
-    font-style: normal;
-    @include adaptiveValue("margin-bottom", 20, 10, 1980, 320);
-  }
-  & ul { @include adaptiveValue("margin-bottom", 20, 10, 1980, 320);}
-  & li {
-    list-style-type: none;
-    &::before {
-      content: "▪";
-      padding-right: rem(5);
-      margin-left: rem(10);
-      color: $dryOrange;
-    }
-  }
+	&__txt {
+		max-width: rem(1200);
+		color: $dryDarkGray;
+		@include adaptiveValue("font-size", 18, 13, 768, 320);
+		font-weight: 400;
+		font-style: normal;
+		@include adaptiveValue("margin-bottom", 20, 10, 1980, 320);
+	}
+	& ul {
+		@include adaptiveValue("margin-bottom", 20, 10, 1980, 320);
+	}
+	& li {
+		list-style-type: none;
+		&::before {
+			content: "▪";
+			padding-right: rem(5);
+			margin-left: rem(10);
+			color: $dryOrange;
+		}
+	}
 }
 .news-menu {
-  margin: rem(55) rem(35) rem(10);
+	margin: rem(55) rem(35) rem(10);
+	@media screen and (max-width: $mobile) {
+		margin: rem(100) rem(20) rem(20) rem(20);
+	}
 }
 
 .news-date {
-  margin: rem(55) rem(35) rem(10);
+	margin: rem(55) rem(35) rem(10);
 }
