@@ -88,7 +88,6 @@
 
 // Видео в качестве фона
 %videoBackground {
-
 	video,
 	iframe,
 	object,
@@ -167,6 +166,23 @@
 
 	&_min {
 		padding-left: 70px;
+	}
+}
+
+.page-content {
+	margin: rem(60) rem(45);
+	@media screen and (max-width: 768px) {
+		margin: rem(20) rem(25);
+	}
+	@media screen and (max-width: 424px) {
+		margin: rem(20) rem(10);
+	}
+}
+.page-title {
+	margin: rem(60) rem(45);
+
+	@media screen and (max-width: 768px) {
+		margin: rem(60) rem(30) rem(30) rem(20);
 	}
 }
 
@@ -314,7 +330,7 @@
 
 #cookie-banner {
 	margin: 20px;
-	background: #34333A;
+	background: #34333a;
 	color: white;
 	padding: 20px;
 	display: flex;
@@ -326,7 +342,7 @@
 }
 
 #cta {
-	background: #00C3FF;
+	background: #00c3ff;
 	padding: 15px 30px;
 	display: flex;
 	justify-content: center;

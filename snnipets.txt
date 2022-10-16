@@ -57,7 +57,7 @@
 	"Quantity": {
 		"scope": "html",
 		"prefix": "quantity",
-		"body": "<div class=\"quantity\">\n\t<button type=\"button\" class=\"quantity__button quantity__button_plus\"></button>\n\t<div class=\"quantity__input\">\n\t\t<input autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<button type=\"button\" class=\"quantity__button quantity__button_minus\"></button>\n</div>",
+		"body": "<div data-quantity class=\"quantity\">\n\t<button data-quantity-plus type=\"button\" class=\"quantity__button quantity__button_plus\"></button>\n\t<div class=\"quantity__input\">\n\t\t<input data-quantity-value autocomplete=\"off\" type=\"text\" name=\"form[]\" value=\"1\">\n\t</div>\n\t<button data-quantity-minus type=\"button\" class=\"quantity__button quantity__button_minus\"></button>\n</div>",
 		"description": "Добавняет HTML формы с кол-вом"
 	},
 	"Add tooltip": {
@@ -246,6 +246,12 @@
 		"body": "max-width: rem($1);",
 		"description": "Максимальная ширина"
 	},
+	"Form Email": {
+		"scope": "html",
+		"prefix": "formemail",
+		"body": "<form action=\"files/sendmail/sendmail.php\" method=\"POST\">\n\t<input type=\"text\" name=\"form[email]\" data-error=\"Error\" placeholder=\"E-mail\" class=\"input\">\n\t<button type=\"submit\" class=\"button\">Send</button>\n</form>",
+		"description": "Максимальная ширина"
+	},
 	"@media max": {
 		"prefix": "md",
 		"body": [
@@ -315,101 +321,115 @@
 		],
 		"description": "fbpp"
 	},
-	"pp": {
+	"Padding": {
+		"scope": "scss,css",
 		"prefix": "pp",
 		"body": [
-			"padding: 0px 0px 0px 0px;"
+			"padding: rem(0) rem(0) rem(0) rem(0);"
 		],
 		"description": "padding"
 	},
-	"ppp": {
+	"Padding left and right": {
+		"scope": "scss,css",
 		"prefix": "ppp",
 		"body": [
-			"padding: 0px $1px;"
+			"padding: 0 rem($1);"
 		],
-		"description": "padding2"
+		"description": "Padding left and right"
 	},
-	"ppt": {
+	"Padding top": {
+		"scope": "scss,css",
 		"prefix": "ppt",
 		"body": [
-			"padding: $1px 0px 0px 0px;"
+			"padding-top: rem($1);"
 		],
 		"description": "padding top"
 	},
-	"ppb": {
+	"Padding bottom": {
+		"scope": "scss,css",
 		"prefix": "ppb",
 		"body": [
-			"padding: 0px 0px $1px 0px;"
+			"padding-bottom: rem($1);"
 		],
 		"description": "padding bottom"
 	},
-	"ppl": {
+	"Padding left": {
+		"scope": "scss,css",
 		"prefix": "ppl",
 		"body": [
-			"padding: 0px 0px 0px $1px;"
+			"padding-left: rem($1);"
 		],
 		"description": "padding left"
 	},
-	"ppr": {
+	"Padding right": {
+		"scope": "scss,css",
 		"prefix": "ppr",
 		"body": [
-			"padding: 0px $1px 0px 0px;"
+			"padding-right: rem($1);"
 		],
 		"description": "padding right"
 	},
-	"mm": {
+	"Margin": {
+		"scope": "scss,css",
 		"prefix": "mm",
 		"body": [
-			"margin: 0px 0px 0px 0px;"
+			"margin: rem(0) rem(0) rem(0) rem(0);"
 		],
 		"description": "margin"
 	},
-	"mr": {
+	"Margin to right": {
+		"scope": "scss,css",
 		"prefix": "mr",
 		"body": [
-			"margin: 0px 0px 0px auto;"
+			"margin: 0 0 0 auto;"
 		],
 		"description": "margin"
 	},
-	"mmm": {
+	"Margin left and right": {
+		"scope": "scss,css",
 		"prefix": "mmm",
 		"body": [
-			"margin: 0px $1px;"
+			"margin: 0px rem($1);"
 		],
-		"description": "margin2"
+		"description": "margin left and right"
 	},
-	"mmt": {
+	"Margin top": {
+		"scope": "scss,css",
 		"prefix": "mmt",
 		"body": [
-			"margin: $1px 0px 0px 0px;"
+			"margin-top: rem($1);"
 		],
 		"description": "margin top"
 	},
-	"mmb": {
+	"Margin bottom": {
+		"scope": "scss,css",
 		"prefix": "mmb",
 		"body": [
-			"margin: 0px 0px $1px 0px;"
+			"margin-bottom: rem($1);"
 		],
 		"description": "margin bottom"
 	},
-	"mml": {
+	"Margin left": {
+		"scope": "scss,css",
 		"prefix": "mml",
 		"body": [
-			"margin: 0px 0px 0px $1px;"
+			"margin-left: rem($1);"
 		],
 		"description": "margin left"
 	},
-	"mmr": {
+	"Margin right": {
+		"scope": "scss,css",
 		"prefix": "mmr",
 		"body": [
-			"margin: 0px $1px 0px 0px;"
+			"margin-right: rem($1);"
 		],
 		"description": "margin right"
 	},
-	"mu": {
+	"Margin 0 auto": {
+		"scope": "scss,css",
 		"prefix": "mu",
 		"body": [
-			"margin: 0px auto;"
+			"margin: 0 auto;"
 		],
 		"description": "margin center"
 	},
@@ -869,12 +889,12 @@
 	},
 	"Select": {
 		"prefix": "sel",
-		"body": "<select name=\"form[]\" class=\"form\">\n\t<option value=\"1\" selected>Пункт №1</option>\n\t<option value=\"2\">Пункт №2</option>\n\t<option value=\"3\">Пункт №3</option>\n\t<option value=\"4\">Пункт №4</option>\n</select>",
+		"body": "<select name=\"form[]\" data-class-modif=\"form\">\n\t<option value=\"1\" selected>Пункт №1</option>\n\t<option value=\"2\">Пункт №2</option>\n\t<option value=\"3\">Пункт №3</option>\n\t<option value=\"4\">Пункт №4</option>\n</select>",
 		"description": "sel"
 	},
 	"Radio buttons": {
 		"prefix": "opt",
-		"body": "<div class=\"options\">\n\t<div class=\"options__item\">\n\t\t<input hidden id=\"o_1\" class=\"options__input\" checked type=\"radio\" value=\"1\" name=\"option\">\n\t\t<label for=\"o_1\" class=\"options__label\"><span class=\"options__text\">${1:Текст}</span></label>\n\t</div>\n\t<div class=\"options__item\">\n\t\t<input hidden id=\"o_2\" class=\"options__input\" type=\"radio\" value=\"2\" name=\"option\">\n\t\t<label for=\"o_2\" class=\"options__label\"><span class=\"options__text\">${2:Текст}</span></label>\n\t</div>\n</div>",
+		"body": "<div class=\"options\">\n\t<div class=\"options__item\">\n\t\t<input id=\"o_1\" class=\"options__input\" checked type=\"radio\" value=\"1\" name=\"option\">\n\t\t<label for=\"o_1\" class=\"options__label\"><span class=\"options__text\">${1:Текст}</span></label>\n\t</div>\n\t<div class=\"options__item\">\n\t\t<input id=\"o_2\" class=\"options__input\" type=\"radio\" value=\"2\" name=\"option\">\n\t\t<label for=\"o_2\" class=\"options__label\"><span class=\"options__text\">${2:Текст}</span></label>\n\t</div>\n</div>",
 		"description": ""
 	},
 	"CheckBox": {
