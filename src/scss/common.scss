@@ -28,7 +28,7 @@
   width: 240px;
   height: 60px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 18px;
   line-height: 264.19%;
   text-align: center;
@@ -70,7 +70,7 @@
 
 .section-title {
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 400;
 	font-family: "SourceSansPro", sans-serif;
 	@include adaptiveValue("font-size", 36, 24, 1920, 320);
 	@include adaptiveValue("line-height", 38, 28, 1920, 320);

@@ -1,92 +1,90 @@
 .video {
-  max-width: rem(1200);
-  display: grid;
-  grid-template-columns: 1fr;
-  column-gap: rem(30);
-  row-gap: rem(60);
-  margin: rem(60) rem(45);
-  @media screen and (max-width: $mobile) {
-    margin: rem(80) rem(20);
-    row-gap: rem(20);
-  }
-  @media screen and (max-width: 320px) {
-    margin: rem(80) rem(10);
-    row-gap: rem(20);
-  }
-  &__title {
-    font-weight: 700;
-    @include adaptiveValue("font-size", 36, 26, 1920, 320);
-    line-height: 42px;
-    color: $dryOrange;
-    margin: 0 0 rem(40) 0;
-    padding: 0;
-    @media screen and (max-width: 425px) {
-      margin: 0 0 rem(20) 0;
-    }
-  }
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: rem(20);
-    margin: 0 0 rem(40) 0;
-    @media screen and (max-width: $mobile) {
-      grid-template-columns: 1fr;
-    }
-  }
-  &__item {
-    display: block;
-    width: 100%;
-    height: rem(400);
-    position: relative;
-    @media screen and (max-width: $mobile) {
-      max-height: rem(400);
-    }
-    @media screen and (max-width: 425px) {
-      max-height: rem(250);
-    }
-  }
-  &__poster {
-    object-fit: cover;
-    width: 100%;
-    height: rem(300);
-    @media screen and (max-width: $mobile) {
-      height: rem(350);
-    }
-    @media screen and (max-width: 425px) {
-      max-height: rem(250);
-    }
-  }
-  &__play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    @media screen and (max-width: $mobile) {
-      top: 40%;
-    }
-  }
-  &__icon {
-    height: rem(80);
-    width: rem(80);
-    transition: 0.5s;
-    cursor: pointer;
-    &:hover {
-      height: rem(90);
-      width: rem(90);
-    }
-  }
-  &__content {
-    height: rem(50);
-    @media screen and (max-width: $mobile) {
-      height: rem(70);
-    }
-  }
-  &__item-title {
-    font-weight: 700;
-    @include adaptiveValue("font-size", 36, 16, 1920, 320);
-    line-height: 42px;
-    color: $dryOrange;
-    
-  }
-  
+	max-width: rem(1200);
+	display: grid;
+	grid-template-columns: 1fr;
+	column-gap: rem(30);
+	row-gap: rem(60);
+	margin: rem(60) rem(45);
+	@media screen and (max-width: $mobile) {
+		margin: rem(80) rem(20);
+		row-gap: rem(20);
+	}
+	@media screen and (max-width: 320px) {
+		margin: rem(80) rem(10);
+		row-gap: rem(20);
+	}
+	&__title {
+		font-weight: 400;
+		@include adaptiveValue("font-size", 36, 26, 1920, 320);
+		line-height: 42px;
+		color: $dryOrange;
+		margin: 0 0 rem(40) 0;
+		padding: 0;
+		@media screen and (max-width: 425px) {
+			margin: 0 0 rem(20) 0;
+		}
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(20);
+		margin: 0 0 rem(40) 0;
+		@media screen and (max-width: $mobile) {
+			grid-template-columns: 1fr;
+		}
+	}
+	&__item {
+		display: block;
+		width: 100%;
+		height: rem(400);
+		position: relative;
+		@media screen and (max-width: $mobile) {
+			max-height: rem(400);
+		}
+		@media screen and (max-width: 425px) {
+			max-height: rem(250);
+		}
+	}
+	&__poster {
+		object-fit: cover;
+		width: 100%;
+		height: rem(300);
+		@media screen and (max-width: $mobile) {
+			height: rem(350);
+		}
+		@media screen and (max-width: 425px) {
+			max-height: rem(250);
+		}
+	}
+	&__play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		@media screen and (max-width: $mobile) {
+			top: 40%;
+		}
+	}
+	&__icon {
+		height: rem(80);
+		width: rem(80);
+		transition: 0.5s;
+		cursor: pointer;
+		&:hover {
+			height: rem(90);
+			width: rem(90);
+		}
+	}
+	&__content {
+		height: rem(50);
+		@media screen and (max-width: $mobile) {
+			height: rem(70);
+		}
+	}
+	&__item-title {
+		font-weight: 400;
+		@include adaptiveValue("font-size", 36, 16, 1920, 320);
+		line-height: 42px;
+		color: $dryOrange;
+	}
 }

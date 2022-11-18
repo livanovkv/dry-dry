@@ -55,6 +55,9 @@ function foldMenu(event) {
 	const socialIcons = document.querySelector('.social-icons')
 	const footer = document.querySelector('.footer')
 	const madeInShveden = document.querySelector('.header__madeinshveden')
+	const catalogButton = document.querySelector('.header__catalog-button')
+	const catalogButtonTxt = document.querySelector('.header__catalog-button-txt')
+	const catalogButtonIco = document.querySelector('.header__catalog-button-ico')
 	function changeMenu() {
 
 		if (changeMenu) {
@@ -73,6 +76,9 @@ function foldMenu(event) {
 			socialIcons.classList.toggle('social-icons_min')
 			footer.classList.toggle('footer_min')
 			madeInShveden.classList.toggle('header__madeinshveden_min')
+			catalogButton.classList.toggle('header__catalog-button_min')
+			catalogButtonTxt.classList.toggle('header__catalog-button-txt_min')
+			catalogButtonIco.classList.toggle('header__catalog-button-ico_min')
 		}
 
 	}

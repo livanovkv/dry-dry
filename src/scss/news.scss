@@ -101,7 +101,7 @@
 		width: auto;
 		height: auto;
 		display: block;
-		font-weight: 700;
+		font-weight: 400;
 		@include adaptiveValue("font-size", 36, 20, 1920, 320);
 		@include adaptiveValue("line-height", 42, 26, 1920, 320);
 		color: $dryOrange;
@@ -113,7 +113,7 @@
 	&__subtitle {
 		width: auto;
 		font-style: normal;
-		font-weight: 700;
+		font-weight: 400;
 		@include adaptiveValue("font-size", 18, 13, 1920, 320);
 		line-height: 21px;
 		color: $dryGray;

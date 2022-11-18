@@ -52,12 +52,12 @@
 	}
 
 	&__txt_bold {
-		font-weight: 700;
+		font-weight: 400;
 	}
 
 	&__phone {
 		font-family: $fontFamily;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: rem(24);
 		line-height: rem(28);
 		color: $dryWhite;
@@ -67,7 +67,7 @@
 
 	&__phone-label {
 		font-family: $fontFamily;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: rem(13);
 		line-height: rem(15);
 		color: $dryWhite;

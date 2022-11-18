@@ -129,8 +129,7 @@
 	}
 
 	&__catalog-label {
-		font-family: $fontFamily;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: rem(18);
 		color: $dryDarkGray;
 		margin: 0 0 0 rem(5);
@@ -152,10 +151,77 @@
 			}
 		}
 	}
+	&__catalog-button {
+		margin: rem(15) rem(20);
+		padding: rem(8) auto;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media screen and (max-width: 1024px) {
+			margin: rem(8);
+			padding: rem(5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: $dryDarkGray;
+		}
+		@media screen and (max-width: 767px) {
+			position: absolute;
+			top: rem(5);
+			right: rem(80);
+			margin: rem(3);
+		}
+		@media screen and (max-width: 320px) {
+			display: none;
+		}
+		&_min {
+			margin: rem(8);
+			background-color: $dryDarkGray;
+			padding: rem(5);
 
+			@media screen and (max-width: 1024px) {
+				background-color: $dryLightGray;
+				margin: rem(15) rem(20);
+				padding: rem(8) auto;
+			}
+		}
+	}
+	&__catalog-button-txt {
+		color: $dryOrange;
+		font-weight: 400;
+		margin: 0 auto;
+		font-size: rem(16);
+		@media screen and (max-width: 1024px) {
+			display: none;
+		}
+		&_min {
+			display: none;
+			@media screen and (max-width: 1024px) {
+				display: block;
+			}
+		}
+	}
+	&__catalog-button-ico {
+		width: rem(30);
+		height: rem(30);
+		display: none;
+		background: url(@img/header_card.svg);
+		background-size: fit;
+		background-repeat: no-repeat;
+		@media screen and (max-width: 1024px) {
+			display: block;
+		}
+		&_min {
+			display: block;
+			@media screen and (max-width: 1024px) {
+				display: none;
+			}
+		}
+	}
 	&__menu {
 		width: auto;
-		margin: rem(30) auto;
+		margin: 0 auto rem(20);
 
 		@media screen and (max-width: 1024px) {
 			display: none;
@@ -192,7 +258,9 @@
 			background-color: $dryWhite;
 			padding: 0;
 			transition: left 0.3s ease 0s;
-
+			@media (max-width: 767px) {
+				flex-wrap: nowrap;
+			}
 			.menu-open & {
 				left: 0;
 			}
@@ -205,8 +273,10 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin: rem(10) rem(25) rem(10) auto;
-
+		margin: 0;
+		@media (max-width: 767px) {
+			margin: rem(10) rem(25) rem(10) auto;
+		}
 		//Burger
 		.icon-menu {
 			display: none;
@@ -265,7 +335,7 @@
 	&__contacts {
 		box-sizing: border-box;
 		width: rem(200);
-		margin: auto auto rem(20) auto;
+		margin: auto;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -299,7 +369,7 @@
 	&__phone {
 		width: 100%;
 		font-family: $fontFamily;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: rem(18);
 		text-align: center;
 
@@ -324,7 +394,7 @@
 
 	&__phone-label {
 		font-family: $fontFamily;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: rem(14);
 		color: $dryGray;
 		margin: rem(10) auto;
@@ -513,17 +583,17 @@
 		z-index: 500;
 
 		@media screen and (max-height: 920px) {
-			line-height: rem(40);
+			line-height: rem(35);
 		}
 		@media screen and (max-height: 767px) {
-			line-height: rem(35);
+			line-height: rem(30);
 		}
 		@media screen and (max-width: 767px) {
 			background-color: #f8f8f8;
 			width: 100%;
 			height: auto;
 			padding: rem(20);
-			font-weight: 700;
+			font-weight: 400;
 			font-size: rem(18);
 			line-height: rem(47);
 		}
@@ -566,7 +636,7 @@
 
 	&__madeinshveden {
 		font-family: $fontFamily;
-		font-weight: 700;
+		font-weight: 400;
 		font-size: rem(14);
 		color: $dryGray;
 		margin: rem(20) auto;
@@ -661,7 +731,7 @@
 
 	&__cart-label {
 		font-size: rem(18);
-		font-weight: 500;
+		font-weight: 400;
 		color: $dryLightGray;
 		height: rem(25);
 
@@ -684,7 +754,7 @@
 		display: flex;
 		align-items: center;
 		font-size: rem(18);
-		font-weight: 700;
+		font-weight: 400;
 		color: $dryOrange;
 		margin-left: rem(10);
 	}

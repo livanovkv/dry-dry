@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Новости</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221117173656">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<button class="header__fold-btn"></button>
+			<a href="/" class="header__logo" title="Dry-Dry"></a>
+			<!--<p class="header__slogan">Устраниение обильного
+    <span>потоотделения</span> надолго
+  </p>-->
+			<div class="header__menu-burger menu">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<nav class="menu__body">
+					<div data-spollers class="spollers spollers__burger-menu">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title">Каталог</button>
+							<div class="spollers__body"></div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="header__catalog">
+				<button class="header__catalog-btn"></button>
+				<a href="./catalog.html" class="header__catalog-label">Каталог</a>
+				<div class="sub-menu">
+					<ul data-da=".spollers__burger-menu, 767" class="sub-menu__list">
+						<li class="sub-menu__item"><a href="./catalog.html" class="sub-menu__link">Все продукты</a></li>
+						<li class="sub-menu__item"><a href="./pocketsize.html" class="sub-menu__link">Pocketsize</a></li>
+						<li class="sub-menu__item"><a href="./antiperspirant.html" class="sub-menu__link">Антиперспиранты</a></li>
+						<li class="sub-menu__item"><a href="./desodorant.html" class="sub-menu__link">Дезодоранты</a></li>
+						<li class="sub-menu__item"><a href="./igigiena.html" class="sub-menu__link">Интимная гигиена</a></li>
+						<li class="sub-menu__item"><a href="./headersh.html" class="sub-menu__link">Средства по уходу за волосами</a>
+						</li>
+						<li class="sub-menu__item"><a href="./body.html" class="sub-menu__link link">Средства по уходу за лицом и
+								телом</a></li>
+					</ul>
+				</div>
+			</div>
+			<nav class="header__menu">
+				<ul data-da=".menu__body, 767" class="main-menu">
+					<li class="main-menu__item"><a class="main-menu__link" href="#">Сотрудничество</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="./partner-list.html">Где купить</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="./about.html">О нас</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="./news.html">Акции/Новости</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="./contacts.html">Контакты</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="./faq.html">Вопрос-ответ</a></li>
+					<li class="main-menu__item"><a class="main-menu__link" href="#">Документы</a></li>
+				</ul>
+			</nav>
+			<div data-da=".menu__body, 767" class="header__contacts">
+				<p class="header__phone"><a class="main-menu__link" href="tel:+74950239340">+7 495 023 93 40</a></p>
+				<p class="header__phone-label">Телефон отдела заказов</p>
+				<input class="toggle-input" id="toggle-input" type="checkbox" />
+				<label for="toggle-input" class="toggle social-icons-btn"><img src="img/social_group.svg"></label>
+
+				<ul class="social-icons">
+					<!--
+      <li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/twitter.svg"></a></li>
+      <li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/youtube.svg"></a></li>
+      -->
+					<li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/instagramm.svg"></a></li>
+					<li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/facebook.svg"></a></li>
+					<li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/ok.svg" alt="Dry Dry в Одноклассниках"></a></li>
+					<li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/vk.svg" alt="Dry Dry во Вконтакте"></a></li>
+					<li class="social-icons__item"><a href="#" class="social-icons__ico"><img src="img/telegramm.svg" alt="Dry Dry в Телеграмм"></a></li>
+				</ul>
+			</div>
+		</header>
+		<main class="page">
+			<nav class="catalog__menu-list news-menu">
+				<a type="button" class="link catalog__menu-item" data-filter="all">Все</a>
+				<a type="button" class="catalog__menu-item link" data-filter="sales">Акции</a>
+				<a type="button" class="catalog__menu-item link" data-filter="news">Новости</a>
+				<a type="button" class="catalog__menu-item link" data-filter="articles">Статьи</a>
+				<a type="button" class="catalog__menu-item link foots" data-filter="ivents">Конкурсы</a>
+				<a href="./videos.html" type="button" class="catalog__menu-item link foots" data-filter="ivents">Видео</a>
+			</nav>
+			<nav class="catalog__menu-list news-date">
+				<a type="button" class="catalog__menu-item link" data-filter="all">2022</a>
+				<a type="button" class="catalog__menu-item link" data-filter="sales">2021</a>
+				<a type="button" class="catalog__menu-item link" data-filter="news">2020</a>
+				<a type="button" class="catalog__menu-item link" data-filter="articles">2019</a>
+				<a type="button" class="catalog__menu-item link foots" data-filter="ivents">2018</a>
+			</nav>
+			<section class="news">
+
+				<article class="news__item">
+					<a href="html/news/drydry_woman.html" class="news__link">
+						<img src="img/news/woman.png" class="news__img" alt=""></a>
+					<div class="news__content">
+						<a href="news/drydry_woman.html" class="news__link">
+							<h2 class="news__title">DRY DRY Woman в аптечной сети Планета Здоровья</h2>
+						</a>
+						<p class="news__subtitle">Парфюмированный антиперспирант поступил в продажу.
+						</p>
+						<p class="news__date">2022</p>
+						<a href="news/drydry_woman.html"><button class="news__btn">Подробнее</button></a>
+					</div>
+				</article>
+
+
+				<article class="news__item">
+					<a href="#" class="news__link"><img src="img/news/product2.jpg" class="news__img" alt=""></a>
+					<div class="news__content">
+						<a href="#" class="news__link">
+							<h2 class="news__title">Подарим набор для ухода за воласами.</h2>
+						</a>
+						<p class="news__subtitle">В социальных сетях проходит конкурс с 25.01 по 04.02.22г.</p>
+					</div>
+				</article>
+
+				<article class="news__item">
+					<div class="news__item-body">
+						<a href="#" class="news__link"><img src="img/news/product3.jpg" class="news__img" alt=""></a>
+						<div class="news__content">
+							<a href="#" class="news__link">
+								<h2 class="news__title">Новогодние подарки каждому!</h2>
+							</a>
+							<p class="news__subtitle">Главный приз - Годовой запас косметических средств от TM DRYDRY</p>
+						</div>
+					</div>
+				</article>
+				<article class="news__item">
+					<div class="news__item-body alt">
+						<a href="#" class="news__link"><img src="img/news/product4.jpg" class="news__img" alt=""></a>
+						<div class="news__content">
+							<a href="#" class="news__link">
+								<h2 class="news__title">Скидки в декабре на всю продукцию TM DRY DRY</h2>
+							</a>
+							<p class="news__subtitle">C 01 по 31 декабря в сети аптек Доктор Столетов</p>
+						</div>
+					</div>
+				</article>
+		</main>
+		<footer class="footer">
+			<div class="footer__contacts">
+				<p class="footer__txt footer__txt_bold">Главный офис</p>
+				<p class="footer__txt">Московская область, г. Королев,
+					Калининградский проезд, д. 1
+					ООО "Сканди Лайн"
+					(Skandy Line LLC)
+					ИНН/TIN 5018112138</p>
+				<p class="footer__txt footer__txt_bold">+7 (495) 512-55-55</p>
+				<p class="footer__txt">Телефон отдела заказов с сайта</p>
+				<p class="footer__txt">Время работы: пн.-чт. 10-18,
+					пт. 10-17, сб.-вс. - выходной</p>
+			</div>
+			<ul class="footer__manager">
+				<p class="footer__txt footer__txt_bold">По вопросам сотрудничества обращайтесь в отделы*:</p>
+				<li class="footer__manager-item">
+					<p class="footer__txt">Начальник перспективного развития:<br>
+						(отдел продаж/оптовые закупки)</p>
+					<p class="footer__txt">Изосимова Татьяна<br>
+						<a href="mailto: izosimova@unk-korolev.ru" class="footer__link">izosimova@unk-korolev.ru</a>
+					</p>
+				</li>
+				<li class="footer__manager-item">
+					<p class="footer__txt">Специалист отдела развития:</p>
+					<p class="footer__txt footer__txt_bold">Соколова Ольга<br>
+						<a href="mailto: dry@unk-korolev.ru" class="footer__link">dry@unk-korolev.ru</a>
+					</p>
+				</li>
+				<li class="footer__manager-item">
+					<p class="footer__txt">Директор по маркетингу и рекламе:</p>
+					<p class="footer__txt footer__txt_bold">Анастасия Шлойда<br>
+						<a href="mailto: marketing@unk-korolev.ru" class="footer__link">marketing@unk-korolev.ru</a>
+					</p>
+				</li>
+				<li class="footer__manager-item">
+					<p class="footer__txt">По вопросам рекламы и маркетинга:</p>
+					<p class="footer__txt footer__txt_bold">Евгения Висленева<br>
+						<a href="mailto: info@dryru.com" class="footer__link">info@dryru.com</a>
+					</p>
+				</li>
+				<li class="footer__manager-item">
+					<p class="footer__txt">Общие вопросы</p>
+					<p class="footer__txt"><a href="mailto: info@dry-dry.ru" class="footer__link">info@dry-dry.ru</a></p>
+				</li>
+			</ul>
+			<div class="footer__diller">
+				<p class="footer__txt footer__txt_bold">Открыты для сотрудничества</p>
+				<p class="footer__txt">Наша Компания заинтересована в работе как с лидерами в сегменте парафармацевтики и
+					лечебной косметики, так и с региональными представителями оптовых компаний.</p>
+			</div>
+			<button class="footer__btn button">Стать дилером</button>
+			<nav>
+				<ul class="footer__menu">
+					<li class="footer__menu-item"><a href="/privacy/" class="footer__menu-link">Политика по обработке персональных
+							данных</a>
+					</li>
+					<li class="footer__menu-item"><a href="/term-of-use/" class="footer__menu-link">Пользовательское соглашение</a>
+					</li>
+					<li class="footer__menu-item"><a href="https://webunto.ru" class="footer__menu-link" target="_blank">Создано в
+							студии Webunto</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>
+	<div id="card" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__text">
+
+					<div class="popup__product-slider">
+						<div class="swiper-product">
+							<!--<h2 class="popup__product-title">3 в 1 DRYDRY<br>
+              Foot Cream </h2>-->
+							<div class="swiper-wrapper">
+								<div class="swiper-slide" data-hash="slide1">
+									<div class="slider__item-img">
+										<img class="slider__img" data-src="img/product/ultra_2n3faul 1.jpg" data-swiper-parallax="-100">
+									</div>
+								</div>
+								<div class="swiper-slide" data-hash="slide2">
+									<div class="slider__item-img">
+										<img class="slider__img" data-src="img/product/ultra_2n3faul 1.jpg" data-swiper-parallax="-100">
+									</div>
+								</div>
+
+							</div>
+							<button type="button" class="swiper-button-prev swiper-button-product-prev"></button>
+							<button type="button" class="swiper-button-next swiper-button-product-next"></button>
+						</div>
+						<!-- Если нужна пагинация -->
+						<div class="swiper-pagination"></div>
+
+						<!-- Если нужен скролбар 
+          <div class="swiper-scrollbar"></div>-->
+						<div class="popup__product-status">Скоро в продаже обновлённая версия!</div>
+						<button class="button popup__btn-product">Купить</button>
+					</div>
+
+				</div>
+				<div class="popup__product-content">
+
+					<div data-da=".popup__conteiner, 1023" class="popup__product-anonce-group">
+						<p class="popup__product-anonce">3 в 1 <br> ДРАЙ ДРАЙ Фут Крем</p>
+						<p class="popup__product-anonce">Мультифункциональный крем
+							для ухода за кожей стоп.</p>
+						<p class="popup__product-anonce">Флакон: 100 ml, Tube (Туба)</p>
+					</div>
+					<div data-tabs class="tabs tabs_product">
+						<nav data-tabs-titles class="tabs__navigation tabs__navigation_product">
+							<button type="button" class="tabs__title popup__title_product _tab-active">Описание </button>
+							<button type="button" class="tabs__title tabs__title_product">Характеристики</button>
+							<button type="button" class="tabs__title tabs__title_product">Инструкция</button>
+							<button type="button" class="tabs__title tabs__title_product">Документы</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body tabs__body_scrollbar">
+								Мультифункциональный крем для ухода за&nbsp;кожей стоп DRYDRY Foot Cream 3&nbsp;в 1.
+
+								DRYDRY Foot Cream&nbsp;&mdash; Мультифункциональный крем для ног с&nbsp;высоким содержанием мочевины
+								в&nbsp;сочетании с
+								активными ингредиентами&nbsp;&mdash; гликолевой, яблочной, лимонной и&nbsp;салициловой
+								кислотами&nbsp;&mdash; для ухода за&nbsp;кожей
+								стоп.
+
+								DRYDRY Foot Cream сочетает в&nbsp;себе силу трех основных свойств по&nbsp;уходу за&nbsp;кожей стоп:
+
+								Отшелушивающий эффект&nbsp;&mdash; DRYDRY Foot Cream способствует удалению отмерших клеток кожи
+								и&nbsp;обновлению верхнего
+								слоя эпидермиса.
+								Антибактериальное действие&nbsp;&mdash; DRYDRY Foot Cream обладает длительным антимикробным эффектом,
+								предотвращая
+								рост микроорганизмов на&nbsp;период до&nbsp;нескольких часов.
+								Профилактика мозолей и&nbsp;трещин&nbsp;&mdash; DRYDRY Foot Cream способен предупредить появление мозолей
+								и&nbsp;трещин.
+							</div>
+							<div class="tabs__body tabs__body_scrollbar">
+								Крем, 100&nbsp;мл, туба
+
+								Состав/Ingredients (INCI): Aqua, Urea, Butyrospermum Parkii Butter, Glycolic Acid, Caprylic/Capric
+								Triglyceride, Butylene Glycol, Malic Acid, Methyl Glucose Sesquistearate, Niacinamide, Propanediol, PEG-20
+								Methyl Glucose Sesquistearate, Canola Oil, Cetyl Alcohol, Octyldodecanol, Stearyl Alcohol, Zinc
+								Ricinoleate, Caprylyl Glycol, Allantoin, Salicylic Acid, Polyacrylate-1&nbsp;Crosspolymer, Sodium
+								Gluconate, Methyl Salicylate, Benzalkonium Chloride, Tocopherol, Citric Acid.
+
+								Противопоказания: Индивидуальная непереносимость компонентов состава.
+
+								Специальные условия: Хранить плотно закрытым при температуре от&nbsp;+5&nbsp;до&nbsp;+25&deg;С.
+
+								Изготовитель: &laquo;Лексима АБ&raquo;, Швеция Не&nbsp;является лекарственным средством.
+
+								Продукция изготовлена согласно SS-EN ISO 22716, а&nbsp;также отвечает требованию&nbsp;EU по&nbsp;GMP (GMP
+								EU&nbsp;класс D)
+
+								Примечание: производитель оставляет за&nbsp;собой право вносить незначительные изменения в&nbsp;дизайн,
+								комплектацию, а&nbsp;так&nbsp;же конструктивные изменения, не&nbsp;затрагивая потребительских свойств
+								товара. Информацию о&nbsp;товаре&nbsp;Вы всегда можете уточнить у&nbsp;наших менеджеров по&nbsp;телефону:
+								+7&nbsp;495&nbsp;512 55&nbsp;55
+							</div>
+							<div class="tabs__body tabs__body_scrollbar">
+								Способ применения: нанесите небольшое количество DRYDRY Foot Cream на&nbsp;чистую и&nbsp;сухую кожу ног
+								и&nbsp;массирующими движениями распределите до&nbsp;полного впитывания. Крем следует применять один раз
+								в&nbsp;день, предпочтительнее вечером, до&nbsp;достижения желаемого эффекта. При ежедневном применении
+								DRYDRY Foot Cream состояние кожи будет заметно улучшаться. После достижения желаемого эффекта крем можно
+								наносить два раза в&nbsp;неделю в&nbsp;целях профилактики гиперкератоза.
+
+								Область применения: сухая кожа ног, костные мозоли и&nbsp;пяточные трещины. Крем также может применяться
+								в&nbsp;качестве заживляющего средства в&nbsp;случае наличия повреждений на&nbsp;коже стоп.
+							</div>
+							<div class="tabs__body">
+								<div class="years__documents">
+									<img src="img/documents.svg" alt="" class="years__document-icon years__document-icon_popup">
+									<a href="#" class="years__link years__link_popup link">Декларация о соответствии</a>
+								</div>
+								<div class="years__documents">
+									<img src="img/documents.svg" alt="" class="years__document-icon years__document-icon_popup">
+									<a href="#" class="years__link years__link_popup link">Протокол антимикробной эффективности</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="popup__product-icons">
+						<li class="popup__product-icons-item"><img src="img/anti-virus.png" alt="" class="popup__product-icon">
+							<p class="popup__product-icon-text">Антибактериальное действие
+								Предотвращает рост микроорганизмов</p>
+						</li>
+						<li class="popup__product-icons-item"><img src="img/foot.png" alt="" class="popup__product-icon">
+							<p class="popup__product-icon-text">Отшелушивающий эффект
+								Способствует обновлению эпидермиса стопы</p>
+						</li>
+						<li class="popup__product-icons-item"><img src="img/pedicure.png" alt="" class="popup__product-icon">
+							<p class="popup__product-icon-text">Профилактика мозолей и трещин
+								Обеспечивает профилактику мозолей и трещин</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="mainVideo" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_video">
+				<button data-close type="button" class="popup__close"></button>
+
+				<iframe width="900" height="600" src="https://www.youtube.com/embed/fa3-eG-ub7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			</div>
+		</div>
+	</div>
+	<div id="dryNoBacteriaVideo" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_video">
+				<button data-close type="button" class="popup__close"></button>
+
+				<iframe width="900" height="600" src="https://www.youtube.com/embed/xoxd8UU4HV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			</div>
+		</div>
+	</div>
+	<div id="drySunCare" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_video">
+				<button data-close type="button" class="popup__close"></button>
+
+				<iframe width="900" height="600" src="https://www.youtube.com/embed/_ybBadpHkGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="aboutVideo" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_video">
+				<button data-close type="button" class="popup__close"></button>
+				<video controls class="about__video-view">
+					<source src="img/video/DryDry-intercharm.mp4" type="video/mp4">
+				</video>
+			</div>
+		</div>
+	</div>
+
+	<div id="feedbackForm" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup__content_form">
+				<button data-close type="button" class="popup__close"></button>
+				<h2 class="form__title">Оставить отзыв</h2>
+				<form action="files/sendmail/sendmail.php" method="POST" class="form form__row">
+					<div class="form__input-list"><input class="form__input" type="text" name="form[name]" data-error="Error" placeholder="Фамилия и имя" class="input">
+						<input type="text" name="form[email]" data-error="Error" placeholder="E-mail" class="form__input">
+						<input type="file" name="form[file]" data-error="Error" class="form__upload" id="form__upload">
+						<label for="form__upload" class="input__file">Загрузить файл (до 10мб)</label>
+						<input type="url" name="form[url]" data-error="Error" placeholder="Вставьте ссылку" class="form__input">
+					</div>
+					<div class="form__textarea-block">
+
+						<textarea class="form__input" name="message" data-autoheight placeholder="Ваше сообщение"></textarea>
+						<button type="submit" class="button">Отправить отзыв</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20221117173656"></script>
+</body>
+
+</html>

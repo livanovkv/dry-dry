@@ -157,7 +157,8 @@
 	}
 
 	&__title {
-		font-weight: 700;
+		@include adaptiveValue("font-size", 48, 24, 1920, 320);
+		font-weight: 400;
 		@include adaptiveValue("line-height", 84, 32, 1920, 320);
 		color: $dryOrange;
 		margin: 0 0 0 30px;
@@ -170,7 +171,8 @@
 
 	&__subtitle {
 		display: inline;
-		font-weight: 700;
+		@include adaptiveValue("font-size", 38, 18, 1920, 320);
+		font-weight: 400;
 		color: $dryGray;
 		margin: 0 0 0 110px;
 		padding: 0;
@@ -184,15 +186,15 @@
 		max-width: 400px;
 		font-style: normal;
 		font-weight: 400;
-		@include adaptiveValue("font-size", 72, 36, 1920, 320);
-		@include adaptiveValue("line-height", 80, 42, 1920, 320);
+		@include adaptiveValue("font-size", 48, 24, 1920, 320);
+		@include adaptiveValue("line-height", 72, 42, 1920, 320);
 		color: $dryOrange;
 		margin: 0 0 0 auto;
 		padding: 0;
 		text-align: center;
 
 		& span {
-			font-weight: 700;
+			font-weight: 400;
 			@include adaptiveValue("font-size", 144, 48, 1920, 320);
 			@include adaptiveValue("line-height", 150, 50, 1920, 320);
 		}
@@ -204,7 +206,7 @@
 
 	&__shveden {
 		width: 100%;
-		font-weight: 700;
+		font-weight: 400;
 		@include adaptiveValue("font-size", 48, 24, 1920, 1024);
 		line-height: 56px;
 		text-transform: uppercase;
@@ -262,7 +264,7 @@
 		margin: 0;
 		@include adaptiveValue("margin-left", 30, 10, 1920, 767);
 		span {
-			font-weight: 700;
+			font-weight: 400;
 		}
 	}
 
@@ -391,7 +393,7 @@
 			margin: rem(30) 0 0 0;
 		}
 		& span {
-			font-weight: 700;
+			font-weight: 400;
 			font-size: 36px;
 			line-height: 42px;
 			color: $dryOrange;
