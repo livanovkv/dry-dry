@@ -115,3 +115,15 @@
 .feedbackForm_vid {
 	display: none;
 }
+
+.basket__alert {
+	font-size: rem(18);
+	font-weight: 700;
+	color: #443e3e;
+	background: rgba(244, 100, 64, 0.6);
+	border-color: $dryOrange;
+}
+.btn-success {
+	background-color:$dryOrange;
+	border-color: $dryOrange;
+}

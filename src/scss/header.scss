@@ -740,6 +740,8 @@
 			width: rem(25);
 			height: rem(25);
 			background-image: url(@img/basket.svg);
+			background-repeat: no-repeat;
+			background-position: bottom;
 		}
 
 		&_price {

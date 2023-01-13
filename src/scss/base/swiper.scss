@@ -34,3 +34,19 @@
 	display: none !important;
 }
 
+.swiper-button-category-prev,
+.swiper-button-category-next {
+	color: $dryOrange;
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+	filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+	&:hover {
+		-webkit-filter: grayscale(0);
+		filter: none;
+		transition: all 0.3s ease-out;
+	}
+}
+.swiper-button-category-prev:after,
+.swiper-button-category-next:after {
+	font-size: rem(25);
+}
