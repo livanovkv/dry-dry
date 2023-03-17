@@ -45,7 +45,7 @@ function initSliders() {
       //simulateTouch: false,
       loop: true,
       preloadImages: false,
-      lazy: true,
+      //lazy: true,
 
 
       // Эффекты
@@ -111,7 +111,7 @@ function initSliders() {
       new Swiper('.swiper-product', { // Указываем скласс нужного слайдера
         // Подключаем модули слайдера
         // для конкретного случая
-        modules: [Autoplay, Parallax, Lazy, Navigation, Scrollbar],
+        modules: [Autoplay, Parallax, Navigation, Scrollbar],
         observer: true,
         observeParents: true,
         slidesPerView: 1,
@@ -123,7 +123,7 @@ function initSliders() {
         //simulateTouch: false,
         loop: true,
         preloadImages: false,
-        lazy: true,
+        //lazy: true,
 
 
         // Эффекты

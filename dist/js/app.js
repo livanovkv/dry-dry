@@ -4715,7 +4715,6 @@
                     touchRatio: 1,
                     loop: true,
                     preloadImages: false,
-                    lazy: true,
                     effect: "fade",
                     autoplay: {
                         delay: 6e3,
@@ -4737,7 +4736,7 @@
                 });
             }
             if (document.querySelector(".swiper-product")) console.log("есть слайдер"), new core(".swiper-product", {
-                modules: [ Autoplay, Parallax, Lazy, Navigation, Scrollbar ],
+                modules: [ Autoplay, Parallax, Navigation, Scrollbar ],
                 observer: true,
                 observeParents: true,
                 slidesPerView: 1,
@@ -4748,7 +4747,6 @@
                 touchRatio: 1,
                 loop: true,
                 preloadImages: false,
-                lazy: true,
                 effect: "fade",
                 autoplay: {
                     delay: 6e3,
