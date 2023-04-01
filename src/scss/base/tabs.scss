@@ -123,7 +123,9 @@
 			min-height: rem(300);
 			padding: 0;
 		}
-
+    &_slider {
+      min-height: rem(600);
+    }
 		&:-webkit-scrollbar {
 			width: 12px;
 			/* ширина scrollbar */

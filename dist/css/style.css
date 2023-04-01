@@ -1028,6 +1028,10 @@ body::after {
   padding: 0 1.25rem 0 0;
 }
 
+.tabs__body_slider {
+  min-height: 37.5rem;
+}
+
 .tabs__body:-webkit-scrollbar {
   width: 12px;
   /* ширина scrollbar */
@@ -1601,6 +1605,10 @@ body::after {
 .btn-success {
   background-color: #fd4f00;
   border-color: #fd4f00;
+}
+
+.fancybox__content .product-page {
+  margin: 0.9375rem;
 }
 
 .header {
