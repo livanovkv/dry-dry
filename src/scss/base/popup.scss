@@ -131,6 +131,10 @@ body::after {
     max-width: rem(600);
     margin: 0 auto;
   }
+  @media screen and (max-width: 768px) {
+    max-width: rem(700);
+    margin: 0 auto;
+  }
   @media screen and (max-width: 479px) {
     width: 100%;
   }
@@ -312,6 +316,9 @@ body::after {
   justify-content: space-between;
   margin: 0 rem(10);
   gap: rem(5);
+  @media screen and (max-width: 425px) {
+    margin: 0;
+  }
 }
 .popup__marketplace {
   width: 140px;
