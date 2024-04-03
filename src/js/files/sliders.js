@@ -39,13 +39,13 @@ function initSliders() {
       slidesPerView: 1,
       spaceBetween: 0,
       autoHeight: true,
-      speed: 800,
+      speed: 3600,
       parallax: true,
       touchRatio: 1,
       //simulateTouch: false,
       loop: true,
-      preloadImages: false,
-      //lazy: true,
+      preloadImages: true,
+      lazy: true,
 
 
       // Эффекты

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="drydry" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="drydry">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$/../drydry" web="/" />
+            <mapping deploy="" local="" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

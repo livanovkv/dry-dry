@@ -121,6 +121,17 @@
 		@media screen and (max-width: 320px) {
 			padding: rem(10) 0;
 		}
+    &_home {
+      @media screen and (max-width: 768px) {
+       min-height: rem(450);
+      }
+      @media screen and (max-width: 425px) {
+        min-height: rem(650);
+       }
+       @media screen and (max-width: 320px) {
+        min-height: rem(750);
+       }
+    }
 	}
 	&__partner {
 		margin: rem(60) 0 0;
@@ -180,7 +191,7 @@
 		}
 
 		&_home {
-			min-height: rem(350);
+			min-height: rem(450);
 
 			& li {
 				list-style-type: none;

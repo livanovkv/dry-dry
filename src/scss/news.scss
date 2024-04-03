@@ -126,6 +126,8 @@
 	}
 }
 .news-detail {
+  width: 100%;
+
 	&__txt {
 		max-width: rem(1200);
 		color: $dryDarkGray;
@@ -146,6 +148,10 @@
 			color: $dryOrange;
 		}
 	}
+  & img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 .news-menu {
 	margin: rem(55) rem(35) rem(10);

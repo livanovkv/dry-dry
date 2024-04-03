@@ -137,3 +137,39 @@
     padding: rem(10);
   }
 }
+
+.card__message {
+  width: 100%;
+  background: rgba(247, 126, 62, 0.50);
+  padding: rem(20) rem(20) rem(20) rem(50);
+  position: relative;
+  &_icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left:10px;
+    top: 10px;
+    background: url(../img/warning.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+.card__message-txt {
+  @include adaptiveValue("font-size", 16, 12, 1980, 320);
+  color: $dryDarkGray;
+  &_bold {
+    font-weight: 700;
+  }
+}
+
+.iframe_video {
+	height: 0px;
+	padding-bottom: 56.2%;
+	position: relative;
+}
+.iframe_video iframe {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
