@@ -29,6 +29,9 @@
   &:active {
     outline: none;
   }
+  &_small {
+    text-transform: none;
+  }
   @media (any-hover: hover) {
     &:hover {
       background-position: 100% 0;

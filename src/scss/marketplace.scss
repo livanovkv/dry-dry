@@ -75,8 +75,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(5);
+  &_mini {
+    margin-top: rem(10);
+    margin-right: rem(10);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
-
+.marketplace__page-share {
+  margin: rem(10) 0 0 rem(10);
+  filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
+}
 .marketplace__item {
   display: flex;
   flex-direction: column;
@@ -85,6 +98,9 @@
   flex-wrap: wrap;
   background-color: $dryWhite;
   border: solid 2px $dryLightGray;
+  &_mini {
+    border: 0;
+  }
 }
 
 .marketplace__item-image {
@@ -92,6 +108,15 @@
   flex-basis: 140px;
   flex-shrink: 0;
   height: 140px;
+  &_mini {
+    width: rem(30);
+    height: rem(30);
+    flex-basis: rem(30);
+    filter: grayscale(1);
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
 }
 
 @media (min-width: 768px) {
