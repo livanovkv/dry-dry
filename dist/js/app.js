@@ -4964,10 +4964,13 @@
             const headerPhoneLabel = document.querySelector(".header__phone-label");
             const socialIcons = document.querySelector(".social-icons");
             const footer = document.querySelector(".footer");
-            const madeInShveden = document.querySelector(".header__madeinshveden");
             const catalogButton = document.querySelector(".header__catalog-button");
             const catalogButtonTxt = document.querySelector(".header__catalog-button-txt");
             const catalogButtonIco = document.querySelector(".header__catalog-button-ico");
+            const madeInTxt = document.querySelector(".header__madein-txt");
+            const madeIn = document.querySelector(".header__madein-icons");
+            const headerLk = document.querySelector(".header__lk-link");
+            const headerLkIcon = document.querySelector(".header__lk-icon");
             function changeMenu() {
                 if (changeMenu) {
                     page.classList.toggle("page_min");
@@ -4984,10 +4987,13 @@
                     socialBtn.classList.toggle("social-icons-btn_min");
                     socialIcons.classList.toggle("social-icons_min");
                     footer.classList.toggle("footer_min");
-                    madeInShveden.classList.toggle("header__madeinshveden_min");
                     catalogButton.classList.toggle("header__catalog-button_min");
                     catalogButtonTxt.classList.toggle("header__catalog-button-txt_min");
                     catalogButtonIco.classList.toggle("header__catalog-button-ico_min");
+                    madeInTxt.classList.toggle("header__madein-txt_min");
+                    madeIn.classList.toggle("header__madein-icons_min");
+                    headerLk.classList.toggle("header__lk-link_min");
+                    headerLkIcon.classList.toggle("header__lk-icon_min");
                 }
             }
             foldBtn.addEventListener("click", changeMenu);

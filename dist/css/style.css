@@ -1714,6 +1714,28 @@ body::after {
   width: 3.75rem;
 }
 
+.header__lk-link {
+  margin: 0.625rem auto;
+  color: #8e8e8e;
+  font-size: 0.75rem;
+}
+
+.header__lk-link_min {
+  display: none;
+}
+
+.header__lk-icon {
+  display: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../img/login.svg");
+  margin: 0.625rem auto;
+}
+
+.header__lk-icon_min {
+  display: block;
+}
+
 .header__logo {
   display: block;
   width: 12.5rem;
@@ -1721,7 +1743,7 @@ body::after {
   background: url("../img/Dry_Dry_Logo.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 3.125rem auto 0;
+  margin: 1.875rem auto 0;
   z-index: 300;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -1826,6 +1848,7 @@ body::after {
   margin: 0.5rem;
   background-color: #443e3e;
   padding: 0.3125rem;
+  border-radius: 3px;
 }
 
 .header__catalog-button-txt {
@@ -2281,6 +2304,29 @@ body::after {
   margin-left: 0.625rem;
 }
 
+.header__madein-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 0;
+}
+
+.header__madein-icons_min {
+  display: none;
+}
+
+.header__madein-txt {
+  font-size: 11px;
+  margin: 10px;
+}
+
+.header__madein-txt_min {
+  display: none;
+}
+
 .social-icons-btn {
   display: none;
 }
@@ -2316,9 +2362,9 @@ input:checked ~ .social-icons_min {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0.625rem;
   -ms-flex-line-pack: justify;
       align-content: space-between;
@@ -3734,7 +3780,6 @@ input:checked ~ .social-icons_min {
 }
 
 .about__conteiner iframe {
-  max-width: 35rem;
   min-width: 17.5rem;
 }
 
@@ -5771,6 +5816,22 @@ button.swiper-pagination-bullet {
     width: 16.875rem;
   }
 
+  .header__lk-link {
+    display: none;
+  }
+
+  .header__lk-link_min {
+    display: block;
+  }
+
+  .header__lk-icon {
+    display: block;
+  }
+
+  .header__lk-icon_min {
+    display: none;
+  }
+
   .header__logo {
     width: 2.5625rem;
     height: 2.5625rem;
@@ -5808,7 +5869,7 @@ button.swiper-pagination-bullet {
 
   .header__catalog-button_min {
     background-color: #f8f8f8;
-    margin: 0.9375rem 1.25rem;
+    margin: 0.5rem 1.25rem;
     padding: 0.5rem auto;
   }
 
@@ -5895,6 +5956,25 @@ button.swiper-pagination-bullet {
     display: block;
   }
 
+  .header__madein-icons {
+    display: none;
+  }
+
+  .header__madein-icons_min {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+
+  .header__madein-txt {
+    display: none;
+  }
+
+  .header__madein-txt_min {
+    display: block;
+  }
+
   .social-icons-btn {
     display: block;
   }
@@ -5927,7 +6007,7 @@ button.swiper-pagination-bullet {
 
   .social-icons {
     display: none;
-    margin: 1.25rem auto;
+    margin: 0.625rem auto;
   }
 
   .social-icons_min {
@@ -6254,6 +6334,15 @@ button.swiper-pagination-bullet {
             justify-content: space-between;
   }
 
+  .header__lk-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .header__logo {
     width: 11.25rem;
     height: 2.5625rem;
@@ -6323,6 +6412,25 @@ button.swiper-pagination-bullet {
     gap: 0.9375rem;
   }
 
+  .header__madein-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+
+  .header__madein-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6330,7 +6438,7 @@ button.swiper-pagination-bullet {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 1.25rem auto;
+    margin: 0.625rem auto;
   }
 
   .footer {
@@ -6708,7 +6816,7 @@ button.swiper-pagination-bullet {
   }
 
   .social-icons {
-    margin: 1.25rem;
+    margin: 0.625rem;
   }
 
   .years__title {
